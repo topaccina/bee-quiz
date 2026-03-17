@@ -1,0 +1,516 @@
+{
+  "topics": [
+    { "key": "bee_biology", "label": "Biologia delle api" },
+    { "key": "pollination", "label": "Impollinazione" },
+    { "key": "hive_management", "label": "Gestione dell'alveare" },
+    { "key": "bee_products", "label": "Prodotti dell'alveare" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Quante ali ha un'ape mellifera adulta?",
+      "options": ["2", "4", "6", "8"],
+      "correctIndex": 1,
+      "topicKey": "bee_biology",
+      "explanation": "Le api mellifere adulte hanno due paia di ali, per un totale di quattro.",
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "q2",
+      "text": "Quale casta è responsabile della deposizione delle uova in una colonia sana?",
+      "options": ["Operaia", "Fuco", "Regina", "Guardiana"],
+      "correctIndex": 2,
+      "topicKey": "bee_biology",
+      "explanation": "La regina è la principale responsabile della deposizione delle uova nella colonia.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q3",
+      "text": "Quanto vive mediamente un'ape operaia durante la stagione di raccolta?",
+      "options": ["Circa 6 giorni", "Circa 6 settimane", "Circa 6 mesi", "Circa 1 anno"],
+      "correctIndex": 1,
+      "topicKey": "bee_biology",
+      "explanation": "Durante la stagione di raccolta un'ape operaia vive in media circa 6 settimane.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q4",
+      "text": "Come viene chiamata l'azione con cui le api regolano la temperatura all'interno dell'alveare?",
+      "options": ["Ventilazione", "Svernamento", "Sciamatura", "Nutrazione"],
+      "correctIndex": 0,
+      "topicKey": "bee_biology",
+      "explanation": "Le api ventilano l'alveare muovendo rapidamente le ali per regolare temperatura e umidità.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q5",
+      "text": "In quale parte del corpo delle api si trova il nettare raccolto prima di essere trasformato in miele?",
+      "options": ["Stomaco sociale (borsa melaria)", "Intestino tenue", "Sacco pollinico", "Ghiandole ceripare"],
+      "correctIndex": 0,
+      "topicKey": "bee_biology",
+      "explanation": "Il nettare viene accumulato nello stomaco sociale, chiamato anche borsa melaria.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q6",
+      "text": "Quale delle seguenti NON è una funzione tipica delle api operaie?",
+      "options": [
+        "Pulizia delle celle",
+        "Raccolta di nettare e polline",
+        "Deposizione di uova fecondate",
+        "Difesa dell'alveare"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bee_biology",
+      "explanation": "La deposizione di uova fecondate è compito della regina, non delle operaie.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q7",
+      "text": "Quale ruolo hanno principalmente i fuchi nella colonia?",
+      "options": [
+        "Raccogliere polline",
+        "Fecondare una regina vergine",
+        "Produrre cera",
+        "Ventilare l'alveare"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_biology",
+      "explanation": "I fuchi hanno come ruolo principale la fecondazione di una regina vergine durante il volo nuziale.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q8",
+      "text": "Come viene definita la comunicazione danzata con cui le api indicano fonti di cibo?",
+      "options": ["Danza rotonda", "Danza dell'addome", "Danza a otto (waggle dance)", "Danza a ventaglio"],
+      "correctIndex": 2,
+      "topicKey": "bee_biology",
+      "explanation": "La danza a otto (waggle dance) comunica direzione e distanza di una fonte di cibo.",
+      "timeLimitSeconds": 30
+    },
+    {
+      "id": "q9",
+      "text": "Perché le api sono così importanti per l'impollinazione delle colture agricole?",
+      "options": [
+        "Perché producono molta cera",
+        "Perché visitano molti fiori e trasferiscono il polline",
+        "Perché difendono le piante dai parassiti",
+        "Perché consumano i semi difettosi"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "Visitando molti fiori, le api trasferiscono il polline e favoriscono la fecondazione.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q10",
+      "text": "Quale pratica è più favorevole agli impollinatori in un frutteto?",
+      "options": [
+        "Sfalciare tutti i fiori spontanei durante la fioritura",
+        "Lasciare fasce inerbite e fiorite tra i filari",
+        "Usare insetticidi ad ampio spettro al mattino",
+        "Rimuovere tutti gli alberi in fioritura spontanea"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "Le fasce inerbite e fiorite offrono nettare e polline a molti impollinatori.",
+      "timeLimitSeconds": 30
+    },
+    {
+      "id": "q11",
+      "text": "In quale momento della giornata è generalmente più sicuro trattare con fitofarmaci per ridurre l'impatto sulle api?",
+      "options": [
+        "Al mattino presto durante la massima fioritura",
+        "A mezzogiorno con piena attività di volo",
+        "Al tramonto o di notte",
+        "In qualunque momento non fa differenza"
+      ],
+      "correctIndex": 2,
+      "topicKey": "pollination",
+      "explanation": "Trattare al tramonto o di notte riduce l'esposizione diretta delle api ai prodotti.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q12",
+      "text": "Che cosa si intende per impollinazione incrociata?",
+      "options": [
+        "Impollinazione tra fiori della stessa pianta",
+        "Impollinazione tra fiori di piante diverse ma della stessa specie",
+        "Impollinazione operata solo dal vento",
+        "Impollinazione senza polline"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "L'impollinazione incrociata avviene tra fiori di piante diverse della stessa specie.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q13",
+      "text": "Quale tra questi insetti è considerato uno dei più importanti impollinatori agricoli?",
+      "options": ["Coleotteri", "Mosche carnivore", "Api mellifere", "Scarafaggi del suolo"],
+      "correctIndex": 2,
+      "topicKey": "pollination",
+      "explanation": "L'ape mellifera è uno degli impollinatori agricoli più importanti e gestiti.",
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "q14",
+      "text": "Perché la diversità floreale durante l'anno è importante per le api?",
+      "options": [
+        "Per aumentare solo la produzione di cera",
+        "Per garantire fonti continue di nettare e polline",
+        "Per ridurre il numero di colonie",
+        "Per evitare la sciamatura"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "Fioriture scalari forniscono alle api risorse alimentari durante tutta la stagione.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q15",
+      "text": "Quale sintomo può indicare un'avvelenamento acuto da pesticidi in un apiario?",
+      "options": [
+        "Api calme all'ingresso",
+        "Api morte in gran numero davanti all'alveare",
+        "Crescita di nuova covata",
+        "Maggiore raccolta di polline"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "Un accumulo di api morte davanti agli alveari può indicare avvelenamento acuto.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q16",
+      "text": "Che cos'è la sciamatura in apicoltura?",
+      "options": [
+        "La raccolta del miele",
+        "La divisione naturale della colonia in due gruppi",
+        "La morte della regina",
+        "La sostituzione dei telaini vecchi"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "La sciamatura è la divisione naturale della colonia, con una parte delle api che segue una nuova regina.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q17",
+      "text": "Quale pratica aiuta a prevenire la sciamatura indesiderata?",
+      "options": [
+        "Stringere l'alveare e ridurre lo spazio",
+        "Aggiungere melari o telaini per aumentare lo spazio",
+        "Sospendere tutte le ispezioni",
+        "Eliminare le scorte di miele"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Fornire spazio aggiuntivo alla colonia riduce la congestione e il rischio di sciamatura.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q18",
+      "text": "Quale parassita è uno dei problemi principali per le colonie di api mellifere in Europa?",
+      "options": ["Varroa destructor", "Mosca domestica", "Cimice asiatica", "Afide verde"],
+      "correctIndex": 0,
+      "topicKey": "hive_management",
+      "explanation": "Varroa destructor è un acaro parassita che indebolisce le colonie se non viene controllato.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q19",
+      "text": "Perché è importante rinnovare periodicamente i telaini con cera vecchia?",
+      "options": [
+        "Per aumentare il peso dell'alveare",
+        "Per ridurre residui e patogeni accumulati nella cera",
+        "Per diminuire la produzione di covata",
+        "Per facilitare la sciamatura"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "La cera vecchia può accumulare residui e spore; rinnovarla migliora la sanità dell'alveare.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q20",
+      "text": "In quale periodo è più indicato effettuare i trattamenti contro la varroa?",
+      "options": [
+        "Sempre durante il flusso nettarifero principale",
+        "Dopo il raccolto principale e in assenza di melari",
+        "Solo in pieno inverno",
+        "Mai, la varroa si controlla da sola"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "I trattamenti sono più indicati dopo il raccolto principale, senza melari, per evitare residui nel miele.",
+      "timeLimitSeconds": 30
+    },
+    {
+      "id": "q21",
+      "text": "Cosa indica generalmente una covata compatta e uniforme?",
+      "options": [
+        "Una regina vecchia e difettosa",
+        "Una buona qualità di regina e colonia sana",
+        "Una forte presenza di varroa",
+        "Una carenza di nutrimento"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Una covata compatta è spesso segno di una regina fertile e di una colonia ben gestita.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q22",
+      "text": "Quale comportamento può indicare che una colonia è orfana (senza regina)?",
+      "options": [
+        "Calma e volo regolare",
+        "Rumore più forte e agitazione sulle api",
+        "Maggiore raccolta di nettare",
+        "Formazione di barbe di api all'esterno"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Le colonie orfane spesso mostrano agitazione e un ronzio più forte rispetto alla norma.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q23",
+      "text": "Che cos'è il miele millefiori?",
+      "options": [
+        "Miele prodotto solo da fiori di tiglio",
+        "Miele prodotto da fiori di agrumi",
+        "Miele ottenuto da nettare di molte specie floreali",
+        "Miele senza polline"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bee_products",
+      "explanation": "Il miele millefiori deriva da nettare raccolto su molte specie di piante diverse.",
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "q24",
+      "text": "Quale componente principale rende il miele un alimento ad alta densità energetica?",
+      "options": ["Proteine", "Grassi", "Carboidrati (zuccheri)", "Vitamine"],
+      "correctIndex": 2,
+      "topicKey": "bee_products",
+      "explanation": "Il miele è ricco di zuccheri semplici, soprattutto fruttosio e glucosio.",
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "q25",
+      "text": "Che cos'è la propoli?",
+      "options": [
+        "Un tipo di miele cristallizzato",
+        "Una sostanza resinosa raccolta dalle api per sigillare e disinfettare l'alveare",
+        "Un parassita della covata",
+        "Un sostituto dello zucchero"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "La propoli è una sostanza resinosa che le api usano per sigillare fessure e sanificare l'alveare.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q26",
+      "text": "Quale prodotto dell'alveare è ricco di proteine e viene utilizzato come integratore?",
+      "options": ["Cera d'api", "Polline", "Miele", "Acqua"],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Il polline d'api è ricco di proteine, vitamine e altri nutrienti.",
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "q27",
+      "text": "Cosa caratterizza un miele monoflora (es. acacia, castagno)?",
+      "options": [
+        "È prodotto in un solo alveare",
+        "Deriva prevalentemente dal nettare di una singola specie vegetale",
+        "Non contiene polline",
+        "Non cristallizza mai"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Un miele monoflora deriva in gran parte dal nettare di una singola specie di pianta.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q28",
+      "text": "Perché il miele cristallizza?",
+      "options": [
+        "Perché diventa vecchio",
+        "Per la naturale precipitazione degli zuccheri, soprattutto glucosio",
+        "Per presenza di acqua piovana",
+        "Perché è stato riscaldato"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "La cristallizzazione è un processo naturale legato al rapporto tra glucosio e fruttosio.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q29",
+      "text": "Quale accorgimento è importante durante il raccolto del miele?",
+      "options": [
+        "Lasciare alle api scorte sufficienti per l'inverno",
+        "Togliere tutto il miele possibile",
+        "Non usare l'affumicatore",
+        "Raccogliere solo in giornate di pioggia"
+      ],
+      "correctIndex": 0,
+      "topicKey": "bee_products",
+      "explanation": "È essenziale lasciare alle api scorte adeguate per sopravvivere ai periodi senza nettare.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q30",
+      "text": "Che cos'è la pappa reale?",
+      "options": [
+        "Il primo miele prodotto dalle api",
+        "La secrezione con cui le api nutrono le larve e la regina",
+        "Un tipo di cera particolarmente pura",
+        "Un parassita della regina"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "La pappa reale è una secrezione delle ghiandole ipofaringee usata per nutrire larve e regina.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q31",
+      "text": "Quale attrezzatura è fondamentale per la sicurezza dell'apicoltore?",
+      "options": [
+        "Tuta o giacca protettiva con velo",
+        "Scarpe aperte",
+        "Guanti in lana",
+        "Occhiali da sole"
+      ],
+      "correctIndex": 0,
+      "topicKey": "hive_management",
+      "explanation": "La tuta o giacca con velo protegge da punture, soprattutto sul viso e sul corpo.",
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "q32",
+      "text": "Perché si utilizza l'affumicatore durante le ispezioni?",
+      "options": [
+        "Per allontanare le api dall'alveare",
+        "Per calmare le api e ridurre le punture",
+        "Per riscaldare il miele",
+        "Per disinfettare i telaini"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Il fumo maschera i feromoni di allarme e induce le api a riempirsi di miele, rendendole più calme.",
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "q33",
+      "text": "Quale tra questi è un comportamento rispettoso verso le api durante la visita?",
+      "options": [
+        "Movimenti lenti e decisi, evitando colpi",
+        "Colpire i telaini per far volare le api",
+        "Togliere il velo per vedere meglio",
+        "Usare profumi intensi"
+      ],
+      "correctIndex": 0,
+      "topicKey": "hive_management",
+      "explanation": "Movimenti lenti e controllati riducono lo stress e l'aggressività delle api.",
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "q34",
+      "text": "Cosa indica una forte presenza di celle reali lungo il bordo inferiore dei telaini?",
+      "options": [
+        "Solo sostituzione silenziosa della regina",
+        "Probabile preparazione alla sciamatura",
+        "Assenza di varroa",
+        "Alveare orfano da mesi"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Molte celle reali sul bordo inferiore sono spesso associate a sciamatura imminente.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q35",
+      "text": "Quale colore del miele è tipico degli mieli di acacia italiani?",
+      "options": ["Molto chiaro quasi trasparente", "Molto scuro", "Verde", "Rosso intenso"],
+      "correctIndex": 0,
+      "topicKey": "bee_products",
+      "explanation": "Il miele di acacia è noto per il colore molto chiaro, quasi incolore.",
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "q36",
+      "text": "Perché è utile marcare la regina con un colore?",
+      "options": [
+        "Perché sia più decorativa",
+        "Per individuarla più facilmente e conoscere l'anno di nascita",
+        "Per aumentare la produzione di miele",
+        "Perché non possa volare"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Il colore di marcatura segue un codice internazionale per identificare l'anno e facilita il ritrovamento della regina.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q37",
+      "text": "Che effetto ha un inverno molto mite sulle colonie di api?",
+      "options": [
+        "Nessun effetto",
+        "Può aumentare il consumo di scorte e la pressione di varroa",
+        "Blocca completamente la covata",
+        "Fa ibernare le api come i mammiferi"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Inverni miti mantengono la covata attiva, aumentando consumo di scorte e ciclo di varroa.",
+      "timeLimitSeconds": 30
+    },
+    {
+      "id": "q38",
+      "text": "Quale tra questi fattori contribuisce maggiormente alla perdita di habitat per gli impollinatori?",
+      "options": [
+        "Aumento dei prati fioriti",
+        "Intensificazione agricola e monocolture",
+        "Introduzione di siepi e filari",
+        "Riduzione dell'uso del suolo"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "Le monocolture e l'eliminazione di elementi naturali riducono habitat e risorse per gli impollinatori.",
+      "timeLimitSeconds": 30
+    },
+    {
+      "id": "q39",
+      "text": "Come possono contribuire i giardini urbani alla tutela delle api?",
+      "options": [
+        "Usando solo prato rasato",
+        "Coltivando fiori melliferi e evitando pesticidi inutili",
+        "Rimuovendo tutte le piante spontanee",
+        "Illuminando fortemente le piante di notte"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "Giardini con fiori melliferi e pochi trattamenti chimici offrono rifugio e nutrimento alle api.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q40",
+      "text": "Perché è importante monitorare regolarmente lo stato delle colonie?",
+      "options": [
+        "Per aumentare il numero di punture",
+        "Per individuare precocemente problemi di salute, spazio o nutrizione",
+        "Solo per controllare la quantità di miele",
+        "Per disturbarle e ridurre la covata"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Ispezioni regolari permettono di intervenire in tempo su varroa, fame, orfanità e congestione.",
+      "timeLimitSeconds": 25
+    }
+  ]
+}
+
