@@ -194,18 +194,19 @@
     <div class="layout-grid">
       <section class="card">
         <div class="top-bar">
-          <div style="display: flex; align-items: center; gap: 0.6rem;">
-            <span class="quiz-progress-badge">
-              Q{currentIndex + 1}
-              {' / '}
-              {roundQuestions.length}
-            </span>
-            <span style="color:var(--text-muted);display:none;">
-              Punteggio:
-              {' '}
-              <span style="color: var(--text-main); font-weight: 600;">{score}</span>
-            </span>
-          </div>
+          <span class="quiz-progress-badge">
+            Q{currentIndex + 1}
+            {' / '}
+            {roundQuestions.length}
+          </span>
+          <button
+            type="button"
+            class="secondary-btn secondary-btn--compact quiz-exit-btn"
+            title="Esci dal quiz"
+            on:click={resetToSetup}
+          >
+            Esci
+          </button>
         </div>
 
         <div style="margin-top: 0.9rem;">
@@ -251,22 +252,19 @@
         <div class="quiz-footer-actions">
           <button
             type="button"
-            class="secondary-btn"
+            class="secondary-btn secondary-btn--compact quiz-footer-btn"
             disabled={Boolean(currentAnswer)}
             on:click={showSolution}
           >
-            Mostra soluzione
+            Soluzione
           </button>
           <button
             type="button"
-            class="secondary-btn"
+            class="secondary-btn secondary-btn--compact quiz-footer-btn"
             disabled={!isCompleted}
             on:click={nextQuestion}
           >
-            {currentIndex + 1 >= roundQuestions.length ? 'Vedi risultati' : 'Domanda successiva'}
-          </button>
-          <button type="button" class="secondary-btn" on:click={resetToSetup}>
-            Esci dal quiz
+            {currentIndex + 1 >= roundQuestions.length ? 'Risultati' : 'Successiva'}
           </button>
         </div>
       </section>
