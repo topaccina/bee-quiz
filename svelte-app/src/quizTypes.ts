@@ -18,12 +18,8 @@ export type QuestionData = {
   questions: Question[]
 }
 
-export type RoundMode = 'mixed' | 'single'
-
 export type RoundConfig = {
   numQuestions: number
-  mode: RoundMode
-  selectedTopicKey?: string
 }
 
 export type AnswerRecord = {

@@ -1,7 +1,5 @@
 import type { AnswerRecord, Question, QuestionData, RoundConfig } from './quizTypes'
 
-export const DEFAULT_TIME_LIMIT_SECONDS = 30
-
 export function validateQuestionData(data: QuestionData): void {
   const topicKeys = new Set(data.topics.map((t) => t.key))
 
@@ -15,9 +13,8 @@ export function validateQuestionData(data: QuestionData): void {
   })
 }
 
-export function buildEligibleQuestionPool(allQuestions: Question[], config: RoundConfig): Question[] {
-  if (config.mode === 'mixed') return [...allQuestions]
-  return allQuestions.filter((q) => q.topicKey === config.selectedTopicKey)
+export function buildEligibleQuestionPool(allQuestions: Question[]): Question[] {
+  return [...allQuestions]
 }
 
 export function shuffleQuestions(questions: Question[]): Question[] {
@@ -30,7 +27,7 @@ export function shuffleQuestions(questions: Question[]): Question[] {
 }
 
 export function selectRoundQuestions(allQuestions: Question[], config: RoundConfig): Question[] {
-  const eligible = buildEligibleQuestionPool(allQuestions, config)
+  const eligible = buildEligibleQuestionPool(allQuestions)
   const shuffled = shuffleQuestions(eligible)
   const count = Math.min(config.numQuestions, shuffled.length)
   return shuffled.slice(0, count)
@@ -38,10 +35,6 @@ export function selectRoundQuestions(allQuestions: Question[], config: RoundConf
 
 export function computeScore(records: AnswerRecord[]): number {
   return records.filter((r) => r.isCorrect).length
-}
-
-export function computeTotalTime(records: AnswerRecord[]): number {
-  return records.reduce((sum, r) => sum + r.timeTakenSeconds, 0)
 }
 
 export function aggregateMistakesByTopic(

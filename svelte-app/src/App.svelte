@@ -1,55 +1,34 @@
 <script lang="ts">
   import {
-    DEFAULT_TIME_LIMIT_SECONDS,
     aggregateMistakesByTopic,
     computeScore,
-    computeTotalTime,
     selectRoundQuestions,
     validateQuestionData
   } from './quizLogic'
-  import type {
-    AnswerRecord,
-    Question,
-    QuestionData,
-    RoundConfig,
-    RoundMode,
-    Topic
-  } from './quizTypes'
+  import type { AnswerRecord, Question, QuestionData, RoundConfig } from './quizTypes'
 
   type AppState = 'setup' | 'quiz' | 'results'
-
-  type TimerState = {
-    remainingSeconds: number
-    totalSeconds: number
-  }
 
   let appState: AppState = 'setup'
   let questionData: QuestionData | null = null
   let loadError: string | null = null
 
-  let config: RoundConfig = {
-    numQuestions: 5,
-    mode: 'mixed'
-  }
+  let config: RoundConfig = { numQuestions: 5 }
 
   let roundQuestions: Question[] = []
   let currentIndex = 0
   let answerRecords: AnswerRecord[] = []
   let completedIds = new Set<string>()
-  let timer: TimerState | null = null
-
-  let timerHandle: ReturnType<typeof setTimeout> | null = null
 
   $: currentQuestion = roundQuestions[currentIndex]
-  $: totalAvailable = computeTotalAvailable()
+  $: totalAvailable = questionData?.questions?.length ?? 0
   $: canStartQuiz = !!(questionData && questionData.questions.length > 0)
   $: score = computeScore(answerRecords)
-  $: totalTime = computeTotalTime(answerRecords)
   $: topicMistakes =
     questionData && roundQuestions.length > 0
       ? aggregateMistakesByTopic(answerRecords, roundQuestions)
       : new Map<string, number>()
-  $: topicsByKey = buildTopicsByKey()
+  $: topicsByKey = new Map((questionData?.topics ?? []).map((t) => [t.key, t]))
   $: currentAnswer =
     currentQuestion &&
     answerRecords.find((r) => r.questionId === currentQuestion.id) || null
@@ -71,67 +50,17 @@
 
   loadQuestions()
 
-  $: if (appState === 'quiz' && currentQuestion && timer) {
-    if (timerHandle) clearTimeout(timerHandle)
-    if (timer.remainingSeconds <= 0) {
-      completeQuestion(null)
-    } else {
-      timerHandle = setTimeout(() => {
-        if (!timer) return
-        timer = {
-          ...timer,
-          remainingSeconds: Math.max(timer.remainingSeconds - 1, 0)
-        }
-      }, 1000)
-    }
-  }
-
-  function computeTotalAvailable(): number {
-    if (!questionData) return 0
-    if (config.mode === 'mixed') return questionData.questions.length
-    // If single-topic mode but no topic chosen yet, show total questions
-    if (!config.selectedTopicKey) return questionData.questions.length
-    return questionData.questions.filter(
-      (q) => q.topicKey === config.selectedTopicKey
-    ).length
-  }
-
-  function buildTopicsByKey(): Map<string, Topic> {
-    const map = new Map<string, Topic>()
-    questionData?.topics.forEach((t) => map.set(t.key, t))
-    return map
-  }
-
-  function changeMode(mode: RoundMode) {
-    config = {
-      ...config,
-      mode,
-      selectedTopicKey: mode === 'single' ? config.selectedTopicKey : undefined
-    }
-  }
-
   function changeNumQuestions(value: number) {
     if (Number.isNaN(value)) return
     const clamped = Math.max(1, Math.min(50, value))
     config = { ...config, numQuestions: clamped }
   }
 
-  function changeTopic(topicKey: string) {
-    config = { ...config, selectedTopicKey: topicKey }
-  }
-
   function startRound(withConfig: RoundConfig = config) {
     if (!questionData) return
 
-    let effectiveConfig = withConfig
-
-    // If single-topic mode but no topic chosen or no eligible questions,
-    // gracefully fall back to mixed mode so the quiz still starts.
-    let selected = selectRoundQuestions(questionData.questions, effectiveConfig)
-    if (selected.length === 0) {
-      effectiveConfig = { ...withConfig, mode: 'mixed', selectedTopicKey: undefined }
-      selected = selectRoundQuestions(questionData.questions, effectiveConfig)
-    }
+    const effectiveConfig = withConfig
+    const selected = selectRoundQuestions(questionData.questions, effectiveConfig)
 
     roundQuestions = selected
     currentIndex = 0
@@ -139,13 +68,6 @@
     completedIds = new Set()
     config = effectiveConfig
     appState = 'quiz'
-
-    const first = roundQuestions[0]
-    const limit = (first?.timeLimitSeconds ?? DEFAULT_TIME_LIMIT_SECONDS) | 0
-    timer = {
-      remainingSeconds: limit,
-      totalSeconds: limit
-    }
   }
 
   function resetToSetup() {
@@ -154,18 +76,11 @@
     currentIndex = 0
     answerRecords = []
     completedIds = new Set()
-    timer = null
-    if (timerHandle) clearTimeout(timerHandle)
   }
 
   function completeQuestion(chosenIndex: number | null) {
     if (!currentQuestion) return
     if (completedIds.has(currentQuestion.id)) return
-
-    const limit =
-      (currentQuestion.timeLimitSeconds ?? DEFAULT_TIME_LIMIT_SECONDS) | 0
-    const remaining = timer?.remainingSeconds ?? limit
-    const timeTaken = Math.min(limit, Math.max(0, limit - remaining))
 
     const isCorrect =
       chosenIndex !== null && chosenIndex === currentQuestion.correctIndex
@@ -176,44 +91,34 @@
         questionId: currentQuestion.id,
         chosenIndex,
         isCorrect,
-        timeTakenSeconds: timeTaken
+        timeTakenSeconds: 0
       }
     ]
 
     completedIds = new Set(completedIds).add(currentQuestion.id)
-    timer = null
-    if (timerHandle) clearTimeout(timerHandle)
   }
 
   function selectAnswer(index: number) {
     if (!currentQuestion) return
     if (completedIds.has(currentQuestion.id)) return
-    if (timer && timer.remainingSeconds <= 0) return
     completeQuestion(index)
+  }
+
+  function showSolution() {
+    if (!currentQuestion) return
+    if (completedIds.has(currentQuestion.id)) return
+    completeQuestion(null)
   }
 
   function nextQuestion() {
     if (currentIndex + 1 >= roundQuestions.length) {
       appState = 'results'
-      timer = null
-      if (timerHandle) clearTimeout(timerHandle)
       return
     }
-    const nextIndex = currentIndex + 1
-    const nextQuestion = roundQuestions[nextIndex]
-    const limit =
-      (nextQuestion.timeLimitSeconds ?? DEFAULT_TIME_LIMIT_SECONDS) | 0
-    currentIndex = nextIndex
-    timer = {
-      remainingSeconds: limit,
-      totalSeconds: limit
-    }
+    currentIndex = currentIndex + 1
   }
 
   $: isCompleted = !!currentAnswer
-  $: timeRemaining = timer?.remainingSeconds ?? 0
-  $: timeTotal = timer?.totalSeconds ?? DEFAULT_TIME_LIMIT_SECONDS
-  $: timeProgress = timeTotal > 0 ? (timeRemaining / timeTotal) * 100 : 0
 </script>
 
 <main class="shell">
@@ -221,8 +126,8 @@
     <div class="brand">
       <div class="brand-mark">B</div>
       <div class="brand-copy">
-        <h1>BeeWise Quiz</h1>
-        <p>Allenamento mirato su api, impollinazione e alveari.</p>
+        <h1 class="brand-title">BeeWise Quiz</h1>
+        <p class="brand-tagline">Test di apicoltura</p>
       </div>
     </div>
     <div>
@@ -263,100 +168,53 @@
       </div>
     </section>
   {:else if appState === 'setup'}
-    <div class="layout-grid">
-      <section class="card">
-        <div class="card-header">
-          <h2>Configura la sessione</h2>
-          <p>Scegli quante domande e da quali argomenti vuoi esercitarti.</p>
+    <div class="setup-page">
+      <section class="card setup-card">
+        <div class="card-header setup-card-header">
+          <h2>Imposta sessione</h2>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 0.9rem;">
-          <div>
-            <div class="field-label-row">
-              <span>Numero di domande</span>
-              <span>{config.numQuestions} / 20</span>
-            </div>
-            <div class="range-row">
-              <input
-                type="range"
-                min="1"
-                max="20"
-                value={config.numQuestions}
-                on:input={(e) => changeNumQuestions(+e.currentTarget.value)}
-              />
-              <input
-                type="number"
-                min="1"
-                max="20"
-                value={config.numQuestions}
-                on:input={(e) => changeNumQuestions(+e.currentTarget.value)}
-              />
-            </div>
-            <p class="helper-text">
-              Il numero effettivo di domande verrà adattato alle domande disponibili.
-            </p>
+        <div class="setup-field">
+          <div class="field-label-row">
+            <span>Numero di domande per round</span>
+            <span>{config.numQuestions} / 20</span>
           </div>
-
-          <div>
-            <p class="field-label-row">
-              <span>Modalità argomenti</span>
-            </p>
-            <div class="pill-choices">
-              <button
-                type="button"
-                class={`pill-button ${config.mode === 'mixed' ? 'pill-button--active' : ''}`}
-                on:click={() => changeMode('mixed')}
-              >
-                <span>Argomenti misti</span>
-                <span>Le domande possono provenire da qualsiasi argomento.</span>
-              </button>
-              <button
-                type="button"
-                class={`pill-button ${config.mode === 'single' ? 'pill-button--active' : ''}`}
-                on:click={() => changeMode('single')}
-              >
-                <span>Argomento singolo</span>
-                <span>Ti concentri su un solo argomento alla volta.</span>
-              </button>
-            </div>
+          <div class="range-row">
+            <input
+              type="range"
+              min="1"
+              max="20"
+              value={config.numQuestions}
+              on:input={(e) => changeNumQuestions(+e.currentTarget.value)}
+            />
+            <input
+              type="number"
+              min="1"
+              max="20"
+              value={config.numQuestions}
+              on:input={(e) => changeNumQuestions(+e.currentTarget.value)}
+            />
           </div>
+        </div>
 
-          {#if config.mode === 'single'}
-            <div>
-              <p class="field-label-row">
-                <span>Argomento</span>
-              </p>
-              <select
-                class="select"
-                bind:value={config.selectedTopicKey}
-                on:change={(e) => changeTopic(e.currentTarget.value)}
-              >
-                <option value="">Seleziona un argomento…</option>
-                {#each questionData.topics as t}
-                  <option value={t.key}>{t.label}</option>
-                {/each}
-              </select>
-            </div>
+        <div class="setup-meta">
+          {#if questionData && questionData.questions.length > 0}
+            <p class="setup-stat">Totale domande in catalogo: <strong>{totalAvailable}</strong></p>
+            <p class="setup-topics-label">Argomenti</p>
+            <ul class="setup-topic-list">
+              {#each questionData.topics as t}
+                <li>{t.label}</li>
+              {/each}
+            </ul>
+          {:else}
+            <p class="setup-stat setup-stat--warn">Nessuna domanda in questions.json.</p>
           {/if}
         </div>
 
-        <div
-          style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.9rem; gap: 0.8rem;"
-        >
-          <p style="font-size: 0.8rem; color: var(--text-muted);">
-            {#if questionData && questionData.questions.length > 0}
-              <span style="color: var(--text-main); font-weight: 500;">
-                {questionData.questions.length} domande
-              </span>
-              {' '}disponibili nel tuo set.
-            {:else}
-              Nessuna domanda trovata nel file questions.json.
-            {/if}
-          </p>
-
+        <div class="setup-actions">
           <button
             type="button"
-            class="primary-btn"
+            class="primary-btn setup-primary"
             disabled={!canStartQuiz}
             on:click={() => startRound(config)}
           >
@@ -364,65 +222,21 @@
           </button>
         </div>
       </section>
-
-      <aside class="card card-muted">
-        <div class="card-header">
-          <h2>Consigli rapidi</h2>
-          <p>Inizia con poche domande e concentrati sugli argomenti che conosci meno.</p>
-        </div>
-        <p class="helper-text">
-          Puoi modificare il set di domande per adattarlo ai tuoi obiettivi di studio.
-        </p>
-        <p class="helper-text" style="margin-top: 0.6rem;">
-          Ogni domanda ha un tempo limite: se il tempo scade, la risposta viene considerata errata.
-        </p>
-      </aside>
     </div>
   {:else if appState === 'quiz' && currentQuestion}
     <div class="layout-grid">
       <section class="card">
         <div class="top-bar">
           <div style="display: flex; align-items: center; gap: 0.6rem;">
-            <span
-              style="border-radius:999px;background:rgba(15,23,42,0.95);padding:0.2rem 0.7rem;border:1px solid rgba(51,65,85,0.9);"
-            >
+            <span class="quiz-progress-badge">
               Q{currentIndex + 1}
               {' / '}
               {roundQuestions.length}
             </span>
             <span style="color:var(--text-muted);display:none;">
-              Score:
+              Punteggio:
               {' '}
               <span style="color: var(--text-main); font-weight: 600;">{score}</span>
-            </span>
-          </div>
-          <div class="timer-shell">
-            <span style="color:var(--text-muted);font-size:0.78rem;">
-              Tempo rimanente
-            </span>
-            <div class="timer-bar">
-              <div
-                class="timer-fill"
-                style={`width: ${timeProgress}%; background: ${
-                  timeRemaining <= 3
-                    ? '#f87171'
-                    : timeRemaining <= 7
-                      ? '#facc15'
-                      : '#22c55e'
-                };`}
-              />
-            </div>
-            <span
-              class="timer-value"
-              style={`font-size: 0.8rem; color: ${
-                timeRemaining <= 3
-                  ? '#fecaca'
-                  : timeRemaining <= 7
-                    ? '#fef9c3'
-                    : '#bbf7d0'
-              };`}
-            >
-              {timeRemaining}s
             </span>
           </div>
         </div>
@@ -448,7 +262,7 @@
                         : ''
                     : ''
                 }`}
-                disabled={Boolean(currentAnswer) || timeRemaining <= 0}
+                disabled={Boolean(currentAnswer)}
                 on:click={() => selectAnswer(i)}
               >
                 <span>{opt}</span>
@@ -464,6 +278,20 @@
               </button>
             {/each}
           </div>
+
+          <div class="quiz-reveal-row">
+            <p class="quiz-reveal-hint">
+              Non sai la risposta? Mostra la soluzione (conteggiata come errore).
+            </p>
+            <button
+              type="button"
+              class="secondary-btn"
+              disabled={Boolean(currentAnswer)}
+              on:click={showSolution}
+            >
+              Mostra soluzione
+            </button>
+          </div>
         </div>
 
         <div
@@ -472,17 +300,15 @@
           <p style="font-size: 0.8rem; color: var(--text-muted);">
             {#if currentAnswer}
               Leggi la spiegazione, poi passa alla prossima domanda.
-            {:else if timeRemaining <= 0}
-              Tempo scaduto: questa domanda viene conteggiata come errata.
             {:else}
-              Seleziona un&apos;opzione per confermare la risposta.
+              Scegli un&apos;opzione oppure mostra la soluzione.
             {/if}
           </p>
           <div style="display:flex; gap:0.5rem;">
             <button
             type="button"
             class="secondary-btn"
-            disabled={!isCompleted && timeRemaining > 0}
+            disabled={!isCompleted}
             on:click={nextQuestion}
           >
             {currentIndex + 1 >= roundQuestions.length ? 'Vedi risultati' : 'Domanda successiva'}
@@ -545,9 +371,6 @@
           {@const percentage = totalQuestions
             ? Math.round((score / totalQuestions) * 100)
             : 0}
-          {@const averageTime = totalQuestions
-            ? Math.round(totalTime / totalQuestions)
-            : 0}
           {@const missedCount = totalQuestions - score}
 
           <div class="summary-grid">
@@ -557,7 +380,7 @@
             </div>
             <div class="summary-tile">
               <p class="summary-label">Risposte corrette</p>
-              <p class="summary-value" style="color:#6ee7b7;">{score}</p>
+              <p class="summary-value summary-value--good">{score}</p>
             </div>
             <div class="summary-tile">
               <p class="summary-label">Percentuale</p>
@@ -565,15 +388,7 @@
             </div>
             <div class="summary-tile">
               <p class="summary-label">Domande sbagliate</p>
-              <p class="summary-value" style="color:#facc15;">{missedCount}</p>
-            </div>
-            <div class="summary-tile">
-              <p class="summary-label">Tempo totale</p>
-              <p class="summary-value">{totalTime}s</p>
-            </div>
-            <div class="summary-tile">
-              <p class="summary-label">Media per domanda</p>
-              <p class="summary-value">{averageTime}s</p>
+              <p class="summary-value summary-value--miss">{missedCount}</p>
             </div>
           </div>
 
@@ -591,7 +406,7 @@
       <aside class="card card-muted">
         <div class="card-header">
           <h2>Dove hai sbagliato</h2>
-          <p>Argomenti con almeno una domanda errata o fuori tempo.</p>
+          <p>Argomenti con almeno un errore (risposta sbagliata o soluzione mostrata).</p>
         </div>
 
         {#if topicMistakes.size === 0}
