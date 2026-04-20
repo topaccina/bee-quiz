@@ -5,15 +5,15 @@
     selectRoundQuestions,
     validateQuestionData
   } from './quizLogic'
-  import type { AnswerRecord, Question, QuestionData, RoundConfig } from './quizTypes'
+  import type { AnswerRecord, Question, QuestionData } from './quizTypes'
+
+  const ROUND_QUESTION_COUNT = 20
 
   type AppState = 'setup' | 'quiz' | 'results'
 
   let appState: AppState = 'setup'
   let questionData: QuestionData | null = null
   let loadError: string | null = null
-
-  let config: RoundConfig = { numQuestions: 5 }
 
   let roundQuestions: Question[] = []
   let currentIndex = 0
@@ -50,23 +50,17 @@
 
   loadQuestions()
 
-  function changeNumQuestions(value: number) {
-    if (Number.isNaN(value)) return
-    const clamped = Math.max(1, Math.min(50, value))
-    config = { ...config, numQuestions: clamped }
-  }
-
-  function startRound(withConfig: RoundConfig = config) {
+  function startRound() {
     if (!questionData) return
 
-    const effectiveConfig = withConfig
-    const selected = selectRoundQuestions(questionData.questions, effectiveConfig)
+    const selected = selectRoundQuestions(questionData.questions, {
+      numQuestions: ROUND_QUESTION_COUNT
+    })
 
     roundQuestions = selected
     currentIndex = 0
     answerRecords = []
     completedIds = new Set()
-    config = effectiveConfig
     appState = 'quiz'
   }
 
@@ -144,7 +138,7 @@
         ></span>
         <span>
           {appState === 'setup'
-            ? 'Impostazione'
+            ? 'Home'
             : appState === 'quiz'
               ? 'Quiz in corso'
               : 'Risultati'}
@@ -170,33 +164,6 @@
   {:else if appState === 'setup'}
     <div class="setup-page">
       <section class="card setup-card">
-        <div class="card-header setup-card-header">
-          <h2>Imposta sessione</h2>
-        </div>
-
-        <div class="setup-field">
-          <div class="field-label-row">
-            <span>Numero di domande per round</span>
-            <span>{config.numQuestions} / 20</span>
-          </div>
-          <div class="range-row">
-            <input
-              type="range"
-              min="1"
-              max="20"
-              value={config.numQuestions}
-              on:input={(e) => changeNumQuestions(+e.currentTarget.value)}
-            />
-            <input
-              type="number"
-              min="1"
-              max="20"
-              value={config.numQuestions}
-              on:input={(e) => changeNumQuestions(+e.currentTarget.value)}
-            />
-          </div>
-        </div>
-
         <div class="setup-meta">
           {#if questionData && questionData.questions.length > 0}
             <p class="setup-stat">Totale domande in catalogo: <strong>{totalAvailable}</strong></p>
@@ -216,7 +183,7 @@
             type="button"
             class="primary-btn setup-primary"
             disabled={!canStartQuiz}
-            on:click={() => startRound(config)}
+            on:click={startRound}
           >
             Avvia quiz
           </button>
@@ -279,48 +246,28 @@
             {/each}
           </div>
 
-          <div class="quiz-reveal-row">
-            <p class="quiz-reveal-hint">
-              Non sai la risposta? Mostra la soluzione (conteggiata come errore).
-            </p>
-            <button
-              type="button"
-              class="secondary-btn"
-              disabled={Boolean(currentAnswer)}
-              on:click={showSolution}
-            >
-              Mostra soluzione
-            </button>
-          </div>
         </div>
 
-        <div
-          style="margin-top: 0.9rem; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;"
-        >
-          <p style="font-size: 0.8rem; color: var(--text-muted);">
-            {#if currentAnswer}
-              Leggi la spiegazione, poi passa alla prossima domanda.
-            {:else}
-              Scegli un&apos;opzione oppure mostra la soluzione.
-            {/if}
-          </p>
-          <div style="display:flex; gap:0.5rem;">
-            <button
+        <div class="quiz-footer-actions">
+          <button
+            type="button"
+            class="secondary-btn"
+            disabled={Boolean(currentAnswer)}
+            on:click={showSolution}
+          >
+            Mostra soluzione
+          </button>
+          <button
             type="button"
             class="secondary-btn"
             disabled={!isCompleted}
             on:click={nextQuestion}
           >
             {currentIndex + 1 >= roundQuestions.length ? 'Vedi risultati' : 'Domanda successiva'}
-            </button>
-            <button
-              type="button"
-              class="secondary-btn"
-              on:click={resetToSetup}
-            >
-              Esci dal quiz
-            </button>
-          </div>
+          </button>
+          <button type="button" class="secondary-btn" on:click={resetToSetup}>
+            Esci dal quiz
+          </button>
         </div>
       </section>
 
@@ -393,11 +340,11 @@
           </div>
 
           <div style="margin-top: 1rem; display:flex; flex-wrap:wrap; gap:0.6rem;">
-            <button type="button" class="primary-btn" on:click={() => startRound(config)}>
-              Ripeti con le stesse impostazioni
+            <button type="button" class="primary-btn" on:click={startRound}>
+              Nuovo quiz
             </button>
             <button type="button" class="secondary-btn" on:click={resetToSetup}>
-              Cambia impostazioni
+              Home
             </button>
           </div>
         {/if}

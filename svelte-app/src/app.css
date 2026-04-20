@@ -368,24 +368,15 @@ select:focus-visible {
   margin-top: 0.85rem;
 }
 
-.quiz-reveal-row {
+.quiz-footer-actions {
   margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.65rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.quiz-reveal-hint {
-  margin: 0;
-  flex: 1;
-  min-width: 10rem;
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  line-height: 1.35;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 
 .answer-btn {
@@ -494,27 +485,9 @@ select:focus-visible {
   max-width: 28rem;
 }
 
-.setup-card-header {
-  margin-bottom: 0.75rem;
-}
-
-.setup-card-header h2 {
-  font-size: 0.88rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
-.setup-field {
-  padding-top: 0.5rem;
-  border-top: 1px solid var(--border-subtle);
-}
-
 .setup-meta {
-  margin-top: 0.85rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border-subtle);
+  margin-top: 0;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
