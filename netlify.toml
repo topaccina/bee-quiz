@@ -1,0 +1,11 @@
+# Netlify: install + build devono avvenire dove c'è package.json (svelte-app).
+# Solo "npm run build --prefix svelte-app" non esegue npm install in quella cartella → vite: not found
+
+[build]
+  base = "svelte-app"
+  command = "npm run build"
+  # Percorso relativo alla base (svelte-app/), non alla root del repo
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
