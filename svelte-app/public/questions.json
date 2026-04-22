@@ -22,12 +22,12 @@
       "id": "q1",
       "text": "Quante ali ha un'ape mellifera adulta?",
       "options": [
-        "2",
         "4",
+        "2",
         "6",
         "8"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "bees",
       "explanation": "Le api mellifere adulte hanno due paia di ali, per un totale di quattro.",
       "timeLimitSeconds": 20
@@ -37,11 +37,11 @@
       "text": "Quale casta è responsabile della deposizione delle uova in una colonia sana?",
       "options": [
         "Operaia",
-        "Fuco",
         "Regina",
+        "Fuco",
         "Guardiana"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "topicKey": "bees",
       "explanation": "La regina è la principale responsabile della deposizione delle uova nella colonia.",
       "timeLimitSeconds": 25
@@ -51,11 +51,11 @@
       "text": "Quanto vive mediamente un'ape operaia durante la stagione di raccolta?",
       "options": [
         "Circa 6 giorni",
-        "Circa 6 settimane",
         "Circa 6 mesi",
+        "Circa 6 settimane",
         "Circa 1 anno"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bees",
       "explanation": "Durante la stagione di raccolta un'ape operaia vive in media circa 6 settimane.",
       "timeLimitSeconds": 25
@@ -64,12 +64,12 @@
       "id": "q4",
       "text": "Come viene chiamata l'azione con cui le api regolano la temperatura all'interno dell'alveare?",
       "options": [
-        "Ventilazione",
         "Svernamento",
         "Sciamatura",
-        "Nutrazione"
+        "Nutrizione",
+        "Ventilazione"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "topicKey": "bees",
       "explanation": "Le api ventilano l'alveare muovendo rapidamente le ali per regolare temperatura e umidità.",
       "timeLimitSeconds": 25
@@ -93,11 +93,11 @@
       "text": "Quale delle seguenti NON è una funzione tipica delle api operaie?",
       "options": [
         "Pulizia delle celle",
-        "Raccolta di nettare e polline",
         "Deposizione di uova fecondate",
+        "Raccolta di nettare e polline",
         "Difesa dell'alveare"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "topicKey": "bees",
       "explanation": "La deposizione di uova fecondate è compito della regina, non delle operaie.",
       "timeLimitSeconds": 25
@@ -107,11 +107,11 @@
       "text": "Quale ruolo hanno principalmente i fuchi nella colonia?",
       "options": [
         "Raccogliere polline",
-        "Fecondare una regina vergine",
         "Produrre cera",
+        "Fecondare una regina vergine",
         "Ventilare l'alveare"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bees",
       "explanation": "I fuchi hanno come ruolo principale la fecondazione di una regina vergine durante il volo nuziale.",
       "timeLimitSeconds": 25
@@ -122,10 +122,10 @@
       "options": [
         "Danza rotonda",
         "Danza dell'addome",
-        "Danza a otto (waggle dance)",
-        "Danza a ventaglio"
+        "Danza a ventaglio",
+        "Danza a otto (waggle dance)"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "topicKey": "bees",
       "explanation": "La danza a otto (waggle dance) comunica direzione e distanza di una fonte di cibo.",
       "timeLimitSeconds": 30
@@ -134,12 +134,12 @@
       "id": "q9",
       "text": "Perché le api sono così importanti per l'impollinazione delle colture agricole?",
       "options": [
-        "Perché producono molta cera",
         "Perché visitano molti fiori e trasferiscono il polline",
+        "Perché producono molta cera",
         "Perché difendono le piante dai parassiti",
         "Perché consumano i semi difettosi"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "pollination",
       "explanation": "Visitando molti fiori, le api trasferiscono il polline e favoriscono la fecondazione.",
       "timeLimitSeconds": 25
@@ -177,11 +177,11 @@
       "text": "Che cosa si intende per impollinazione incrociata?",
       "options": [
         "Impollinazione tra fiori della stessa pianta",
-        "Impollinazione tra fiori di piante diverse ma della stessa specie",
         "Impollinazione operata solo dal vento",
-        "Impollinazione senza polline"
+        "Impollinazione senza polline",
+        "Impollinazione tra fiori di piante diverse ma della stessa specie"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "pollination",
       "explanation": "L'impollinazione incrociata avviene tra fiori di piante diverse della stessa specie.",
       "timeLimitSeconds": 25
@@ -190,12 +190,12 @@
       "id": "q13",
       "text": "Quale tra questi insetti è considerato uno dei più importanti impollinatori agricoli?",
       "options": [
+        "Api mellifere",
         "Coleotteri",
         "Mosche carnivore",
-        "Api mellifere",
         "Scarafaggi del suolo"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "topicKey": "pollination",
       "explanation": "L'ape mellifera è uno degli impollinatori agricoli più importanti e gestiti.",
       "timeLimitSeconds": 20
@@ -219,11 +219,11 @@
       "text": "Quale sintomo può indicare un'avvelenamento acuto da pesticidi in un apiario?",
       "options": [
         "Api calme all'ingresso",
-        "Api morte in gran numero davanti all'alveare",
         "Crescita di nuova covata",
+        "Api morte in gran numero davanti all'alveare",
         "Maggiore raccolta di polline"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "pollination",
       "explanation": "Un accumulo di api morte davanti agli alveari può indicare avvelenamento acuto.",
       "timeLimitSeconds": 25
@@ -233,11 +233,11 @@
       "text": "Che cos'è la sciamatura in apicoltura?",
       "options": [
         "La raccolta del miele",
-        "La divisione naturale della colonia in due gruppi",
         "La morte della regina",
-        "La sostituzione dei telaini vecchi"
+        "La sostituzione dei telaini vecchi",
+        "La divisione naturale della colonia in due gruppi"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "hive_management",
       "explanation": "La sciamatura è la divisione naturale della colonia, con una parte delle api che segue una nuova regina.",
       "timeLimitSeconds": 25
@@ -246,12 +246,12 @@
       "id": "q17",
       "text": "Quale pratica aiuta a prevenire la sciamatura indesiderata?",
       "options": [
-        "Stringere l'alveare e ridurre lo spazio",
         "Aggiungere melari o telaini per aumentare lo spazio",
+        "Stringere l'alveare e ridurre lo spazio",
         "Sospendere tutte le ispezioni",
         "Eliminare le scorte di miele"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "hive_management",
       "explanation": "Fornire spazio aggiuntivo alla colonia riduce la congestione e il rischio di sciamatura.",
       "timeLimitSeconds": 25
@@ -260,12 +260,12 @@
       "id": "q18",
       "text": "Quale parassita è uno dei problemi principali per le colonie di api mellifere in Europa?",
       "options": [
-        "Varroa destructor",
         "Mosca domestica",
+        "Varroa destructor",
         "Cimice asiatica",
         "Afide verde"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "topicKey": "hive_management",
       "explanation": "Varroa destructor è un acaro parassita che indebolisce le colonie se non viene controllato.",
       "timeLimitSeconds": 25
@@ -275,73 +275,59 @@
       "text": "Perché è importante rinnovare periodicamente i telaini con cera vecchia?",
       "options": [
         "Per aumentare il peso dell'alveare",
-        "Per ridurre residui e patogeni accumulati nella cera",
         "Per diminuire la produzione di covata",
+        "Per ridurre residui e patogeni accumulati nella cera",
         "Per facilitare la sciamatura"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "hive_management",
       "explanation": "La cera vecchia può accumulare residui e spore; rinnovarla migliora la sanità dell'alveare.",
       "timeLimitSeconds": 25
     },
     {
       "id": "q20",
-      "text": "In quale periodo è più indicato effettuare i trattamenti contro la varroa?",
-      "options": [
-        "Sempre durante il flusso nettarifero principale",
-        "Dopo il raccolto principale e in assenza di melari",
-        "Solo in pieno inverno",
-        "Mai, la varroa si controlla da sola"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "I trattamenti sono più indicati dopo il raccolto principale, senza melari, per evitare residui nel miele.",
-      "timeLimitSeconds": 30
-    },
-    {
-      "id": "q21",
       "text": "Cosa indica generalmente una covata compatta e uniforme?",
       "options": [
         "Una regina vecchia e difettosa",
-        "Una buona qualità di regina e colonia sana",
         "Una forte presenza di varroa",
-        "Una carenza di nutrimento"
+        "Una carenza di nutrimento",
+        "Una buona qualità di regina e colonia sana"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "hive_management",
       "explanation": "Una covata compatta è spesso segno di una regina fertile e di una colonia ben gestita.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q22",
+      "id": "q21",
       "text": "Quale comportamento può indicare che una colonia è orfana (senza regina)?",
       "options": [
-        "Calma e volo regolare",
         "Rumore più forte e agitazione sulle api",
+        "Calma e volo regolare",
         "Maggiore raccolta di nettare",
         "Formazione di barbe di api all'esterno"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "hive_management",
       "explanation": "Le colonie orfane spesso mostrano agitazione e un ronzio più forte rispetto alla norma.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q23",
+      "id": "q22",
       "text": "Che cos'è il miele millefiori?",
       "options": [
         "Miele prodotto solo da fiori di tiglio",
-        "Miele prodotto da fiori di agrumi",
         "Miele ottenuto da nettare di molte specie floreali",
+        "Miele prodotto da fiori di agrumi",
         "Miele senza polline"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "topicKey": "bee_products",
       "explanation": "Il miele millefiori deriva da nettare raccolto su molte specie di piante diverse.",
       "timeLimitSeconds": 20
     },
     {
-      "id": "q24",
+      "id": "q23",
       "text": "Quale componente principale rende il miele un alimento ad alta densità energetica?",
       "options": [
         "Proteine",
@@ -355,35 +341,35 @@
       "timeLimitSeconds": 20
     },
     {
-      "id": "q25",
+      "id": "q24",
       "text": "Che cos'è la propoli?",
       "options": [
         "Un tipo di miele cristallizzato",
-        "Una sostanza resinosa raccolta dalle api per sigillare e disinfettare l'alveare",
         "Un parassita della covata",
-        "Un sostituto dello zucchero"
+        "Un sostituto dello zucchero",
+        "Una sostanza resinosa raccolta dalle api per sigillare e disinfettare l'alveare"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "bee_products",
       "explanation": "La propoli è una sostanza resinosa che le api usano per sigillare fessure e sanificare l'alveare.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q26",
+      "id": "q25",
       "text": "Quale prodotto dell'alveare è ricco di proteine e viene utilizzato come integratore?",
       "options": [
-        "Cera d'api",
         "Polline",
+        "Cera d'api",
         "Miele",
         "Acqua"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "bee_products",
       "explanation": "Il polline d'api è ricco di proteine, vitamine e altri nutrienti.",
       "timeLimitSeconds": 20
     },
     {
-      "id": "q27",
+      "id": "q26",
       "text": "Cosa caratterizza un miele monoflora (es. acacia, castagno)?",
       "options": [
         "È prodotto in un solo alveare",
@@ -397,49 +383,35 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q28",
+      "id": "q27",
       "text": "Perché il miele cristallizza?",
       "options": [
         "Perché diventa vecchio",
-        "Per la naturale precipitazione degli zuccheri, soprattutto glucosio",
         "Per presenza di acqua piovana",
+        "Per la naturale precipitazione degli zuccheri, soprattutto glucosio",
         "Perché è stato riscaldato"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bee_products",
       "explanation": "La cristallizzazione è un processo naturale legato al rapporto tra glucosio e fruttosio.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q29",
-      "text": "Quale accorgimento è importante durante il raccolto del miele?",
-      "options": [
-        "Lasciare alle api scorte sufficienti per l'inverno",
-        "Togliere tutto il miele possibile",
-        "Non usare l'affumicatore",
-        "Raccogliere solo in giornate di pioggia"
-      ],
-      "correctIndex": 0,
-      "topicKey": "bee_products",
-      "explanation": "È essenziale lasciare alle api scorte adeguate per sopravvivere ai periodi senza nettare.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q30",
+      "id": "q28",
       "text": "Che cos'è la pappa reale?",
       "options": [
         "Il primo miele prodotto dalle api",
-        "La secrezione con cui le api nutrono le larve e la regina",
         "Un tipo di cera particolarmente pura",
-        "Un parassita della regina"
+        "Un parassita della regina",
+        "La secrezione con cui le api nutrono le larve e la regina"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "bee_products",
       "explanation": "La pappa reale è una secrezione delle ghiandole ipofaringee usata per nutrire larve e regina.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q31",
+      "id": "q29",
       "text": "Quale attrezzatura è fondamentale per la sicurezza dell'apicoltore?",
       "options": [
         "Tuta o giacca protettiva con velo",
@@ -453,11 +425,11 @@
       "timeLimitSeconds": 20
     },
     {
-      "id": "q32",
+      "id": "q30",
       "text": "Perché si utilizza l'affumicatore durante le ispezioni?",
       "options": [
         "Per allontanare le api dall'alveare",
-        "Per calmare le api e ridurre le punture",
+        "Per calmare le api",
         "Per riscaldare il miele",
         "Per disinfettare i telaini"
       ],
@@ -467,35 +439,35 @@
       "timeLimitSeconds": 20
     },
     {
-      "id": "q33",
+      "id": "q31",
       "text": "Quale tra questi è un comportamento rispettoso verso le api durante la visita?",
       "options": [
-        "Movimenti lenti e decisi, evitando colpi",
         "Colpire i telaini per far volare le api",
         "Togliere il velo per vedere meglio",
+        "Movimenti lenti e decisi, evitando colpi",
         "Usare profumi intensi"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "topicKey": "hive_management",
       "explanation": "Movimenti lenti e controllati riducono lo stress e l'aggressività delle api.",
       "timeLimitSeconds": 20
     },
     {
-      "id": "q34",
-      "text": "Cosa indica una forte presenza di celle reali lungo il bordo inferiore dei telaini?",
+      "id": "q32",
+      "text": "Cosa indica una forte presenza di celle reali lungo i bordi dei telaini?",
       "options": [
         "Solo sostituzione silenziosa della regina",
-        "Probabile preparazione alla sciamatura",
         "Assenza di varroa",
-        "Alveare orfano da mesi"
+        "Alveare orfano da mesi",
+        "Probabile preparazione alla sciamatura"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "hive_management",
       "explanation": "Molte celle reali sul bordo inferiore sono spesso associate a sciamatura imminente.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q35",
+      "id": "q33",
       "text": "Quale colore del miele è tipico degli mieli di acacia italiani?",
       "options": [
         "Molto chiaro quasi trasparente",
@@ -509,7 +481,7 @@
       "timeLimitSeconds": 20
     },
     {
-      "id": "q36",
+      "id": "q34",
       "text": "Perché è utile marcare la regina con un colore?",
       "options": [
         "Perché sia più decorativa",
@@ -523,63 +495,49 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q37",
-      "text": "Che effetto ha un inverno molto mite sulle colonie di api?",
-      "options": [
-        "Nessun effetto",
-        "Può aumentare il consumo di scorte e la pressione di varroa",
-        "Blocca completamente la covata",
-        "Fa ibernare le api come i mammiferi"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "Inverni miti mantengono la covata attiva, aumentando consumo di scorte e ciclo di varroa.",
-      "timeLimitSeconds": 30
-    },
-    {
-      "id": "q38",
+      "id": "q35",
       "text": "Quale tra questi fattori contribuisce maggiormente alla perdita di habitat per gli impollinatori?",
       "options": [
         "Aumento dei prati fioriti",
-        "Intensificazione agricola e monocolture",
         "Introduzione di siepi e filari",
+        "Intensificazione agricola e monocolture",
         "Riduzione dell'uso del suolo"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "pollination",
       "explanation": "Le monocolture e l'eliminazione di elementi naturali riducono habitat e risorse per gli impollinatori.",
       "timeLimitSeconds": 30
     },
     {
-      "id": "q39",
+      "id": "q36",
       "text": "Come possono contribuire i giardini urbani alla tutela delle api?",
       "options": [
         "Usando solo prato rasato",
-        "Coltivando fiori melliferi e evitando pesticidi inutili",
         "Rimuovendo tutte le piante spontanee",
-        "Illuminando fortemente le piante di notte"
+        "Illuminando fortemente le piante di notte",
+        "Coltivando fiori melliferi e evitando pesticidi inutili"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "pollination",
       "explanation": "Giardini con fiori melliferi e pochi trattamenti chimici offrono rifugio e nutrimento alle api.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q40",
+      "id": "q37",
       "text": "Perché è importante monitorare regolarmente lo stato delle colonie?",
       "options": [
-        "Per aumentare il numero di punture",
         "Per individuare precocemente problemi di salute, spazio o nutrizione",
+        "Per aumentare il numero di punture",
         "Solo per controllare la quantità di miele",
         "Per disturbarle e ridurre la covata"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "hive_management",
       "explanation": "Ispezioni regolari permettono di intervenire in tempo su varroa, fame, orfanità e congestione.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q41",
+      "id": "q38",
       "text": "Nel linguaggio delle foraggere, cosa comunica soprattutto la durata del tratto rettilineo ('corrida') nella danza a otto?",
       "options": [
         "Solo la ricchezza di polline",
@@ -593,67 +551,53 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q42",
+      "id": "q39",
       "text": "Le operaie riconoscono le compagne della stessa colonia principalmente grazie a:",
       "options": [
         "Solo alla lunghezza delle ali",
-        "Profilo cuticolare e feromoni",
         "Il rumore del volo",
+        "Profilo cuticolare e feromoni",
         "La temperatura corporea"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bees",
       "explanation": "Le api discriminano le conspecifiche tramite miscela di idrocarburi cuticolari e altri segnali chimici.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q43",
+      "id": "q40",
       "text": "Cos'è la trofallassi tra operaie?",
       "options": [
         "Deposizione di uova",
         "Combattimento tra casta",
-        "Scambio di liquidi alimentari e informazioni",
-        "Costruzione di cera"
+        "Costruzione di cera",
+        "Scambio di liquidi alimentari e informazioni"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "topicKey": "bees",
       "explanation": "La trofallassi è la trasmissione bocca a bocca di cibo e può coinvolgere anche segnali ormonali.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q44",
-      "text": "Per polietismo temporale si intende che le operaie:",
-      "options": [
-        "Cambiano colore con la stagione",
-        "Passano progressivamente a compiti diversi con l’età",
-        "Vivono solo in primavera",
-        "Non foraggiano mai"
-      ],
-      "correctIndex": 1,
-      "topicKey": "bees",
-      "explanation": "Dalla pulizia del nido al foraggio, le mansioni tipiche seguono un andamento legato all’età dell’ape.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q45",
+      "id": "q41",
       "text": "Le operaie addette alla pulizia del nido e alla rimozione dei cadaveri sono spesso chiamate:",
       "options": [
+        "Spazzine / portinerie",
         "Foraggere",
         "Nutrici",
-        "Spazzine / portinerie",
         "Cerifere"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "topicKey": "bees",
       "explanation": "Le spazzine trasportano fuori corpi morti e detriti per mantenere l’igiene del nido.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q46",
+      "id": "q42",
       "text": "La danza rotonda comunica in genere:",
       "options": [
         "Una fonte molto lontana",
-        "Una fonte vicina all’alveare",
+        "Una fonte vicina all'alveare",
         "Un pericolo imminente",
         "La fine della stagione"
       ],
@@ -663,78 +607,50 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q47",
-      "text": "Quale funzione hanno in gran parte le feromoni mandibolari della regina?",
-      "options": [
-        "Attrarre solo i fuchi",
-        "Coesione dell'ammasso e inibizione parziale di cellule reali",
-        "Produrre cera",
-        "Cristallizzare il miele"
-      ],
-      "correctIndex": 1,
-      "topicKey": "bees",
-      "explanation": "I feromoni regali contribuiscono all’armonia sociale e a regolare aspetti della riproduzione nel nido.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q48",
+      "id": "q43",
       "text": "Le api ventilano il nido battendo le ali per:",
       "options": [
         "Deporre uova",
-        "Ridurre CO₂ e regolare temperatura/umidità",
         "Costruire cera",
+        "Ridurre CO₂ e regolare temperatura/umidità",
         "Accoppiarsi"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bees",
       "explanation": "La ventilazione è fondamentale per scambi gassosi e termoregolazione, soprattutto con covata densa.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q49",
+      "id": "q44",
       "text": "Un volo di orientamento delle giovani operaie serve soprattutto a:",
       "options": [
         "Deporre polline",
-        "Imparare la posizione dell’alveare rispetto al paesaggio",
         "Eliminare la regina",
-        "Produrre propoli"
+        "Produrre propoli",
+        "Imparare la posizione dell'alveare rispetto al paesaggio"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "bees",
       "explanation": "Prima del foraggio effettivo le operaie effettuano voli di orientamento per memorizzare riferimenti visivi e odori.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q50",
-      "text": "Il suono definito “piping” emesso dalla regina è associato spesso a:",
+      "id": "q45",
+      "text": "Le antenne dell'ape sono importanti soprattutto per:",
       "options": [
-        "Solo nutrizione larve",
-        "Fasi di emergenza o preparazione allo sciame",
-        "Cristallizzazione del miele",
-        "Assenza totale di covata"
-      ],
-      "correctIndex": 1,
-      "topicKey": "bees",
-      "explanation": "Il piping è un segnale acustico legato a dinamiche di regina e colonia, inclusi aspetti legati allo sciame.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q51",
-      "text": "Le antenne dell’ape sono importanti soprattutto per:",
-      "options": [
+        "Percezione chimica e tattile dell'ambiente",
         "Solo equilibrio in volo",
-        "Percezione chimica e tattile dell’ambiente",
         "Emissione di cera",
         "Digestione del polline"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "bees",
       "explanation": "Ricettori olfattivi e tattili sulle antenne guidano foraggio, riconoscimento sociale e valutazione dei fiori.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q52",
-      "text": "Un’ape foraggera che trova una buona fonte e torna al nido può reclutare compagne tramite:",
+      "id": "q46",
+      "text": "Un'ape foraggera che trova una buona fonte e torna al nido può reclutare compagne tramite:",
       "options": [
         "Solo odor di propoli",
         "Danze e contatto antennale",
@@ -747,49 +663,49 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q53",
+      "id": "q47",
       "text": "In termini biologici, la sciamatura rappresenta soprattutto:",
       "options": [
         "Perdita accidentale di api",
-        "Riproduzione della colonia a livello di superorganismo",
         "Solo raccolta di polline",
+        "Riproduzione della colonia a livello di superorganismo",
         "Malattia della covata"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bees",
       "explanation": "Lo sciame è il modo con cui una colonia si moltiplica: una parte delle api lascia con una regina verso una nuova sede.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q54",
+      "id": "q48",
       "text": "Dopo lo sciame principale, nella colonia madre restano tipicamente:",
       "options": [
         "Solo fuchi",
-        "Operaie e celle reali con nuove regime in sviluppo",
         "Sempre la vecchia regina",
-        "Nessuna covata"
+        "Nessuna covata",
+        "Operaie e celle reali con nuove regime in sviluppo"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "bees",
       "explanation": "Nello sciame primario parte la vecchia regina con una frazione delle operaie; nel nido restano celle reali e nuove regime.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q55",
+      "id": "q49",
       "text": "Le celle reali pendenti lungo il margine del favo sono destinate a:",
       "options": [
-        "Deporre uova di fuco",
         "Sviluppare nuove regime",
+        "Deporre uova di fuco",
         "Conservare miele",
         "Raccogliere polline"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "bees",
       "explanation": "Le celle reali contengono larve femminili nutrite abbondantemente per diventare regime vergini.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q56",
+      "id": "q50",
       "text": "In clima temperato, la sciamatura naturale è più frequente in genere:",
       "options": [
         "In pieno inverno",
@@ -803,49 +719,49 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q57",
+      "id": "q51",
       "text": "Una colonia molto popolosa e senza spazio sufficiente di covata tende a:",
       "options": [
         "Estinguersi in giorni",
-        "Aumentare il rischio di sciamatura",
         "Produrre solo cera senza covata",
+        "Aumentare il rischio di sciamatura",
         "Perdere tutte le ali"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bees",
       "explanation": "Congestione e regina in buone condizioni favoriscono preparativi per lo sciame.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q58",
-      "text": "Per ridurre sciami indesiderati l’apicoltore può, tra le altre cose:",
+      "id": "q52",
+      "text": "Per ridurre sciami indesiderati l'apicoltore può, tra le altre cose:",
       "options": [
         "Chiudere per mesi il volo",
-        "Dare spazio (melari/telai), dividere o gestire celle reali",
         "Eliminare tutta la covata",
-        "Togliere tutte le operaie anziane"
+        "Togliere tutte le operaie anziane",
+        "Dare spazio (melari/telai), dividere o gestire celle reali"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "bees",
       "explanation": "Spazio, giovane regina e gestione delle celle reali sono leve classiche di prevenzione.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q59",
+      "id": "q53",
       "text": "Il volo nuziale della regina vergine serve a:",
       "options": [
-        "Deporre subito uova fecondate senza accoppiamento",
         "Accoppiarsi con più fuchi in volo",
+        "Deporre subito uova fecondate senza accoppiamento",
         "Solo ventilare il nido",
         "Migrare in altro continente"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "bees",
       "explanation": "La regina si accoppia tipicamente con più fuchi durante uno o più voli nuziali.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q60",
+      "id": "q54",
       "text": "Una sciamatura secondaria può verificarsi quando:",
       "options": [
         "Non esiste mai",
@@ -859,50 +775,50 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q61",
+      "id": "q55",
       "text": "Il feromone Nasonov secreto dalle operaie serve soprattutto a:",
       "options": [
         "Uccidere la varroa",
-        "Segnare orientamento verso sedi (es. ingresso alveare o sciame)",
         "Cristallizzare il miele",
+        "Segnare orientamento verso sedi (es. ingresso alveare o sciame)",
         "Fermare la covata"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bees",
       "explanation": "Le operaie sollevano l’addome e diffondono Nasonov per guidare compagne verso una posizione.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q62",
+      "id": "q56",
       "text": "Catturare uno sciame appollaiato su un ramo si fa di solito:",
       "options": [
         "Spruzzando benzina",
-        "Scuotendo o tagliando il ramo in un contenitore e trasferendo in arnia",
         "Lasciandolo sempre al sole fino a morte",
-        "Solo di notte senza mai aprire"
+        "Solo di notte senza mai aprire",
+        "Scuotendo o tagliando il ramo in un contenitore e trasferendo in arnia"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "bees",
       "explanation": "Si usa un cestello/scatola sciame e si travasa con calma in arnia predisposta con telai.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q63",
-      "text": "Uno “sciame artificiale” può essere creato per:",
+      "id": "q57",
+      "text": "Uno \"sciame artificiale\" può essere creato per:",
       "options": [
-        "Aumentare le punture",
         "Moltiplicare colonie o rinfoltire nuclei",
+        "Aumentare le punture",
         "Eliminare la propoli",
-        "Sostituire l’acqua piovana"
+        "Sostituire l'acqua piovana"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "bees",
       "explanation": "La divisione controllata di telai con covata e api replica in parte il processo naturale.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q64",
-      "text": "Subito dopo l’ingresso di uno sciame in arnia nuova è buona norma:",
+      "id": "q58",
+      "text": "Subito dopo l'ingresso di uno sciame in arnia nuova è buona norma:",
       "options": [
         "Chiudere tutto per tre mesi",
         "Controllare costruzione su telai/fondazione e nutrire se risorse scarse",
@@ -915,63 +831,49 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q65",
+      "id": "q59",
       "text": "Varroa destructor è un:",
       "options": [
         "Virus intestinale",
-        "Acaro ectoparassita",
         "Fungo del favo",
+        "Acaro ectoparassita",
         "Insetto predatore delle api"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "hive_management",
       "explanation": "La varroa si attacca alle api e alla covata, veicola virus e indebolisce la colonia.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q66",
+      "id": "q60",
       "text": "Ali deformi nelle operaie emergenti sono spesso correlate a:",
       "options": [
         "Solo freddo notturno",
-        "Virus (es. DWV) in associazione a carica elevata di varroa",
         "Troppo miele chiaro",
-        "Solo mancanza di polline"
+        "Solo mancanza di polline",
+        "Virus (es. DWV) in associazione a carica elevata di varroa"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "hive_management",
       "explanation": "DWV e altri virus si moltiplicano nel ciclo varroa–ape e si manifestano con sintomi alare.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q67",
+      "id": "q61",
       "text": "Nosema apis / ceranae è:",
       "options": [
+        "Un microsporidio che colpisce l'intestino",
         "Un acaro",
-        "Un microsporidio che colpisce l’intestino",
         "Un batterio della covata",
         "Un nematode"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "hive_management",
       "explanation": "I Nosema sono patogeni unicellulari che possono ridurre la longevità e l’efficienza delle operaie.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q68",
-      "text": "La loque americana (American foulbrood) è causata da:",
-      "options": [
-        "Varroa destructor",
-        "Paenibacillus larvae",
-        "Ascosphaera apis",
-        "Virus israeliano acuto"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "AFB è una malattia batterica della covata con spore molto resistenti.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q69",
+      "id": "q62",
       "text": "La calcificazione (chalkbrood) è dovuta a:",
       "options": [
         "Batterio",
@@ -985,77 +887,49 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q70",
-      "text": "Il monitoraggio integrato della varroa include spesso:",
-      "options": [
-        "Solo osservazione esterna",
-        "Conta alare (tappeto o lavaggio) e scelta di trattamenti mirati",
-        "Mai trattare",
-        "Solo fumo"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "Misurare l’infestazione guida tempi e metodi (meccanici, biologici, chimici) secondo normativa.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q71",
-      "text": "Le spore di loque americana possono:",
-      "options": [
-        "Morire in poche ore all’aria",
-        "Restare vitali anni in cera e attrezzature contaminate",
-        "Essere eliminate solo con vento",
-        "Essere ignorate sempre"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "Per questo AFB richiede protocolli rigorosi di bonifica o distruzione del materiale.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q72",
-      "text": "L’acaro delle trachee (Acarapis woodi) vive:",
+      "id": "q63",
+      "text": "L'acaro delle trachee (Acarapis woodi) vive:",
       "options": [
         "Nel miele",
-        "Nel sistema tracheale delle api",
         "Solo sulle ali",
+        "Nel sistema tracheale delle api",
         "Nel terreno"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "hive_management",
       "explanation": "È un parassita interno meno comune di Varroa ma storicamente noto in apicoltura.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q73",
-      "text": "La “sparizione” massiccia di operaie (sindrome tipo CCD) è considerata in genere:",
+      "id": "q64",
+      "text": "La \"sparizione\" massiccia di operaie (sindrome tipo CCD) è considerata in genere:",
       "options": [
         "Dovuta a un solo virus identificato",
-        "Multifattoriale (patogeni, nutrizione, pesticidi, gestione…)",
         "Normale ogni primavera",
-        "Curabile solo con zucchero invertito"
+        "Curabile solo con zucchero invertito",
+        "Multifattoriale (patogeni, nutrizione, pesticidi, gestione…)"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "hive_management",
       "explanation": "La letteratura scientifica descrive interazioni complesse più che una singola causa.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q74",
+      "id": "q65",
       "text": "La melata prodotta dagli afidi può favorire:",
       "options": [
-        "Crescita più lenta delle piante",
         "Sviluppo di muffe fuligginose sulle foglie",
+        "Crescita più lenta delle piante",
         "Eliminazione della varroa",
         "Cristallizzazione istantanea del miele"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "hive_management",
       "explanation": "I funghi fuligginosi crescono sulle melate escrete su foglie e frutti.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q75",
+      "id": "q66",
       "text": "Gli acidi organici contro varroa (es. formico, ossalico) vanno usati:",
       "options": [
         "In qualsiasi momento senza leggere etichetta",
@@ -1069,77 +943,49 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q76",
-      "text": "Un apiario con segni sospetti di loque americana deve essere gestito:",
-      "options": [
-        "Come sempre, senza segnalazioni",
-        "Con isolamento, campionamento e rispetto delle norme sanitarie locali",
-        "Vendendo subito il miele",
-        "Ignorando i telai scuri"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "Molte regioni prevedono notifica e protocolli ufficiali per patologie di notifica.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q77",
+      "id": "q67",
       "text": "L'affumicatore serve principalmente a:",
       "options": [
         "Nutrire le api",
-        "Calmare le api mascherando feromoni di allarme e inducendo carica di miele",
         "Sterilizzare i telai",
+        "Calmare le api mascherando feromoni di allarme e inducendo carica di miele",
         "Misurare la temperatura"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "hive_management",
       "explanation": "Il fumo moderato riduce la probabilità di punture durante la manipolazione.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q78",
-      "text": "Nel fumigatore è opportuno bruciare materiali che:",
+      "id": "q68",
+      "text": "Nell'affumicatore è opportuno bruciare materiali che:",
       "options": [
         "Producano fiamma alta continua",
-        "Brucino lentamente senza tossicità per api e apicoltore",
         "Siano sempre impregnati di benzina",
-        "Siano solo plastica"
+        "Siano solo plastica",
+        "Brucino lentamente senza tossicità per api e apicoltore"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "hive_management",
       "explanation": "Si usano paglia, cartone, trucioli specifici; evitare sostanze nocive o fumi troppo caldi.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q79",
-      "text": "Il levatelaio serve a:",
+      "id": "q69",
+      "text": "La leva serve a:",
       "options": [
-        "Tagliare la regina",
         "Sollevare telai incollati da propoli o cera",
+        "Tagliare la regina",
         "Misurare il peso",
         "Ventilare"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "hive_management",
       "explanation": "Aiuta a non danneggiare i favi quando i telai aderiscono ai margini.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q80",
-      "text": "La spatola uncinata è utile per:",
-      "options": [
-        "Solo mungere",
-        "Sganciare telai e raschiare depositi di propoli/cera",
-        "Contare le api",
-        "Accendere il fumo"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "È uno degli attrezzi più usati in apertura melario e pulizia bordi.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q81",
+      "id": "q70",
       "text": "Il velo o maschera apistica protegge soprattutto:",
       "options": [
         "Solo le mani",
@@ -1153,91 +999,49 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q82",
-      "text": "Un escludi-regina nel melario serve a:",
+      "id": "q71",
+      "text": "Un escludi-regina serve a:",
       "options": [
         "Far entrare solo i fuchi",
-        "Impedire alla regina di salire a deporre uova nel melario",
         "Riscaldare il melario",
+        "Impedire alla regina di salire a deporre uova nel melario",
         "Bloccare il volo di tutte le api"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "hive_management",
       "explanation": "Si ottiene miele senza covata (né uova/larve) nei telai da estrazione.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q83",
+      "id": "q72",
       "text": "La bilancia sotto arnia è utile per:",
       "options": [
         "Contare le singole api",
-        "Monitorare peso e andamento di scorte/raccolta",
         "Misurare solo la regina",
-        "Decorazione"
+        "Decorazione",
+        "Monitorare peso e andamento di scorte/raccolta"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "hive_management",
       "explanation": "Curve di peso aiutano a decidere su nutrizione, raccolto e vigilanza sanitaria.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q84",
-      "text": "Il tappeto alare per diagnosi di varroa si basa su:",
-      "options": [
-        "Contare le ali cadute",
-        "Raccogliere e analizzare caduta naturale o campione (protocolli noti)",
-        "Solo annusare l’alveare",
-        "Misurare il colore della cera"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "Si combina con lavaggi o altre tecniche per stimare carica parassitaria.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q85",
-      "text": "Il carrello o slitta per arnie serve a:",
-      "options": [
-        "Aumentare le punture",
-        "Spostare rinchiostrate con meno sforzo",
-        "Uccidere varroa",
-        "Solo estetica"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "Utile in apiari con molte colonie o terreni impervi.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q86",
+      "id": "q73",
       "text": "Registri di apiario (trattamenti, movimenti, produzione) sono importanti per:",
       "options": [
+        "Tracciabilità , normativa e buona gestione",
         "Solo decoro",
-        "Tracciabilità, normativa e buona gestione",
         "Nessun motivo",
         "Solo vendere cera"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "hive_management",
       "explanation": "In molti contesti sono richiesti o fortemente consigliati per sicurezza alimentare e sanità.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q87",
-      "text": "Telaini in acciaio inox rispetto al legno sono spesso:",
-      "options": [
-        "Sempre vietati",
-        "Più lavabili e duraturi in certi contesti igienici",
-        "Più leggeri del polistirolo",
-        "Impermeabili al miele"
-      ],
-      "correctIndex": 1,
-      "topicKey": "hive_management",
-      "explanation": "Si usano in laboratori o dove serve sanificazione frequente; hanno pro e contro rispetto al legno.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q88",
+      "id": "q74",
       "text": "Un fumo eccessivo o troppo caldo può:",
       "options": [
         "Essere indifferente",
@@ -1251,49 +1055,49 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q89",
-      "text": "Il veleno d’ape contiene soprattutto:",
+      "id": "q75",
+      "text": "Il veleno d'ape contiene soprattutto:",
       "options": [
         "Solo zucchero",
-        "Peptidi come melittina, apamina e enzimi (es. fosfolipasi)",
         "Solo cera",
+        "Peptidi come melittina, apamina e enzimi (es. fosfolipasi)",
         "Nettare concentrato"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bee_products",
       "explanation": "È una complessa miscela bioattiva prodotta dalle ghiandole acido e alcalino.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q90",
+      "id": "q76",
       "text": "Una reazione anafilattica a puntura di ape:",
       "options": [
         "È sempre normale",
-        "È un’emergenza medica potenzialmente letale in soggetti sensibilizzati",
         "Si cura solo con miele",
-        "Succede solo ai fuchi"
+        "Succede solo ai fuchi",
+        "È un'emergenza medica potenzialmente letale in soggetti sensibilizzati"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "bee_products",
       "explanation": "Chi ha allergie note deve avere piano terapeutico; l’apicoltore deve conoscere i rischi.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q91",
+      "id": "q77",
       "text": "La propoli per le api è soprattutto:",
       "options": [
-        "Un tipo di miele scuro",
         "Resine vegetali raccolte e mescolate a secrezioni e cera",
+        "Un tipo di miele scuro",
         "Polline pressato",
         "Acqua di fiori"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "bee_products",
       "explanation": "Viene usata per sigillare, incollare e sanificare superfici nel nido.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q92",
+      "id": "q78",
       "text": "La pappa reale è prodotta da:",
       "options": [
         "La regina",
@@ -1307,68 +1111,54 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q93",
-      "text": "Il veleno d’ape per uso terapeutico o di laboratorio richiede:",
+      "id": "q79",
+      "text": "Il veleno d'ape per uso terapeutico o di laboratorio richiede:",
       "options": [
         "Solo raccolta manuale con pinze",
-        "Dispositivi e procedure specializzate e normative",
         "Nessuna cautela",
+        "Dispositivi e procedure specializzate e normative",
         "Solo miele diluito"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bee_products",
       "explanation": "La raccolta e commercializzazione seguono regole stringenti per sicurezza e qualità.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q94",
+      "id": "q80",
       "text": "Dopo una puntura, la prima cosa utile è spesso:",
       "options": [
         "Premere forte il veleno dentro",
-        "Rimuovere rapidamente il pungiglione per ridurre l’iniezione",
         "Applicare miele caldo obbligatoriamente",
-        "Ignorare sempre la reazione"
+        "Ignorare sempre la reazione",
+        "Rimuovere rapidamente il pungiglione per ridurre l'iniezione"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "topicKey": "bee_products",
       "explanation": "Il pungiglione può continuare a iniettare; raschiarlo via riduce il carico di veleno.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q95",
-      "text": "Il miele “tossico” da alcune piante (es. rododendro) può contenere:",
+      "id": "q81",
+      "text": "Il polline d'api come alimento umano è apprezzato per:",
       "options": [
-        "Solo vitamina C",
-        "Grayanotossine e altri composti vegetali",
-        "Solo acqua",
-        "Solo fruttosio"
-      ],
-      "correctIndex": 1,
-      "topicKey": "bee_products",
-      "explanation": "Non va confuso con il veleno d’ape; è un rischio legato a botanica e origine geografica del nettare.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q96",
-      "text": "Il polline d’api come alimento umano è apprezzato per:",
-      "options": [
-        "Solo grassi saturi",
         "Proteine, vitamine, minerali e fitocomposti",
+        "Solo grassi saturi",
         "Assenza totale di zuccheri",
         "Solo alcool"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "topicKey": "bee_products",
       "explanation": "È considerato un superfood; attenzione a qualità e allergie.",
       "timeLimitSeconds": 25
     },
     {
-      "id": "q97",
-      "text": "L’apitossicazione massiccia (molte punture) può essere pericolosa perché:",
+      "id": "q82",
+      "text": "L'apitossicazione massiccia (molte punture) può essere pericolosa perché:",
       "options": [
         "Non inietta veleno",
-        "Somma dose di tossine e mediatori dell’infiammazione",
-        "Succede solo d’inverno",
+        "Somma dose di tossine e mediatori dell'infiammazione",
+        "Succede solo d'inverno",
         "È solo estetica"
       ],
       "correctIndex": 1,
@@ -1377,45 +1167,17 @@
       "timeLimitSeconds": 25
     },
     {
-      "id": "q98",
-      "text": "Le controindicazioni all’apiterapia con veleno includono tipicamente:",
-      "options": [
-        "Nessuna: tutti possono",
-        "Allergie, gravidanza, alcune patologie cardiovascolari/immunitarie",
-        "Solo età > 100 anni",
-        "Solo api nere"
-      ],
-      "correctIndex": 1,
-      "topicKey": "bee_products",
-      "explanation": "Va sempre valutata da personale sanitario qualificato dove previsto.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q99",
-      "text": "La melittina nel veleno d’ape è nota per:",
+      "id": "q83",
+      "text": "La melittina nel veleno d'ape è nota per:",
       "options": [
         "Dolcificare il miele",
-        "Proprietà lisante sulle membrane cellulari",
         "Produrre cera",
+        "Proprietà lisante sulle membrane cellulari",
         "Eliminare la covata"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "topicKey": "bee_products",
       "explanation": "È uno dei principali peptidi citotossici del veleno.",
-      "timeLimitSeconds": 25
-    },
-    {
-      "id": "q100",
-      "text": "In cosmetica il veleno d’ape compare talvolta in:",
-      "options": [
-        "Concentrazioni pure al 50% per tutti",
-        "Formulazioni professionali a bassa dose, non prodotti non controllati",
-        "Solo dentifrici al fluoro",
-        "Solo benzina"
-      ],
-      "correctIndex": 1,
-      "topicKey": "bee_products",
-      "explanation": "L’etichettatura e la sicurezza variano per Paese; diffidare dei prodotti non tracciati.",
       "timeLimitSeconds": 25
     }
   ]

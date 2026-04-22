@@ -1,0 +1,84 @@
+domanda_id,categoria,domanda,risposta_1,risposta_2,risposta_3,risposta_4,risposta_corretta
+q1,Le api,Quante ali ha un'ape mellifera adulta?,2,4,6,8,2
+q2,Le api,Quale casta Ã¨ responsabile della deposizione delle uova in una colonia sana?,Operaia,Fuco,Regina,Guardiana,3
+q3,Le api,Quanto vive mediamente un'ape operaia durante la stagione di raccolta?,Circa 6 giorni,Circa 6 settimane,Circa 6 mesi,Circa 1 anno,2
+q4,Le api,Come viene chiamata l'azione con cui le api regolano la temperatura all'interno dell'alveare?,Ventilazione,Svernamento,Sciamatura,Nutrizione,1
+q5,Le api,In quale parte del corpo delle api si trova il nettare raccolto prima di essere trasformato in miele?,Stomaco sociale (borsa melaria),Intestino tenue,Sacco pollinico,Ghiandole ceripare,1
+q6,Le api,Quale delle seguenti NON Ã¨ una funzione tipica delle api operaie?,Pulizia delle celle,Raccolta di nettare e polline,Deposizione di uova fecondate,Difesa dell'alveare,3
+q7,Le api,Quale ruolo hanno principalmente i fuchi nella colonia?,Raccogliere polline,Fecondare una regina vergine,Produrre cera,Ventilare l'alveare,2
+q8,Le api,Come viene definita la comunicazione danzata con cui le api indicano fonti di cibo?,Danza rotonda,Danza dell'addome,Danza a otto (waggle dance),Danza a ventaglio,3
+q9,Impollinazione,PerchÃ© le api sono cosÃ¬ importanti per l'impollinazione delle colture agricole?,PerchÃ© producono molta cera,PerchÃ© visitano molti fiori e trasferiscono il polline,PerchÃ© difendono le piante dai parassiti,PerchÃ© consumano i semi difettosi,2
+q10,Impollinazione,Quale pratica Ã¨ piÃ¹ favorevole agli impollinatori in un frutteto?,Sfalciare tutti i fiori spontanei durante la fioritura,Lasciare fasce inerbite e fiorite tra i filari,Usare insetticidi ad ampio spettro al mattino,Rimuovere tutti gli alberi in fioritura spontanea,2
+q11,Impollinazione,In quale momento della giornata Ã¨ generalmente piÃ¹ sicuro trattare con fitofarmaci per ridurre l'impatto sulle api?,Al mattino presto durante la massima fioritura,A mezzogiorno con piena attivitÃ di volo,Al tramonto o di notte,In qualunque momento non fa differenza,3
+q12,Impollinazione,Che cosa si intende per impollinazione incrociata?,Impollinazione tra fiori della stessa pianta,Impollinazione tra fiori di piante diverse ma della stessa specie,Impollinazione operata solo dal vento,Impollinazione senza polline,2
+q13,Impollinazione,Quale tra questi insetti Ã¨ considerato uno dei piÃ¹ importanti impollinatori agricoli?,Coleotteri,Mosche carnivore,Api mellifere,Scarafaggi del suolo,3
+q14,Impollinazione,PerchÃ© la diversitÃ floreale durante l'anno Ã¨ importante per le api?,Per aumentare solo la produzione di cera,Per garantire fonti continue di nettare e polline,Per ridurre il numero di colonie,Per evitare la sciamatura,2
+q15,Impollinazione,Quale sintomo puÃ² indicare un'avvelenamento acuto da pesticidi in un apiario?,Api calme all'ingresso,Api morte in gran numero davanti all'alveare,Crescita di nuova covata,Maggiore raccolta di polline,2
+q16,Gestione dell'alveare,Che cos'Ã¨ la sciamatura in apicoltura?,La raccolta del miele,La divisione naturale della colonia in due gruppi,La morte della regina,La sostituzione dei telaini vecchi,2
+q17,Gestione dell'alveare,Quale pratica aiuta a prevenire la sciamatura indesiderata?,Stringere l'alveare e ridurre lo spazio,Aggiungere melari o telaini per aumentare lo spazio,Sospendere tutte le ispezioni,Eliminare le scorte di miele,2
+q18,Gestione dell'alveare,Quale parassita Ã¨ uno dei problemi principali per le colonie di api mellifere in Europa?,Varroa destructor,Mosca domestica,Cimice asiatica,Afide verde,1
+q19,Gestione dell'alveare,PerchÃ© Ã¨ importante rinnovare periodicamente i telaini con cera vecchia?,Per aumentare il peso dell'alveare,Per ridurre residui e patogeni accumulati nella cera,Per diminuire la produzione di covata,Per facilitare la sciamatura,2
+q21,Gestione dell'alveare,Cosa indica generalmente una covata compatta e uniforme?,Una regina vecchia e difettosa,Una buona qualitÃ di regina e colonia sana,Una forte presenza di varroa,Una carenza di nutrimento,2
+q22,Gestione dell'alveare,Quale comportamento puÃ² indicare che una colonia Ã¨ orfana (senza regina)?,Calma e volo regolare,Rumore piÃ¹ forte e agitazione sulle api,Maggiore raccolta di nettare,Formazione di barbe di api all'esterno,2
+q23,Prodotti dell'alveare,Che cos'Ã¨ il miele millefiori?,Miele prodotto solo da fiori di tiglio,Miele prodotto da fiori di agrumi,Miele ottenuto da nettare di molte specie floreali,Miele senza polline,3
+q24,Prodotti dell'alveare,Quale componente principale rende il miele un alimento ad alta densitÃ energetica?,Proteine,Grassi,Carboidrati (zuccheri),Vitamine,3
+q25,Prodotti dell'alveare,Che cos'Ã¨ la propoli?,Un tipo di miele cristallizzato,Una sostanza resinosa raccolta dalle api per sigillare e disinfettare l'alveare,Un parassita della covata,Un sostituto dello zucchero,2
+q26,Prodotti dell'alveare,Quale prodotto dell'alveare Ã¨ ricco di proteine e viene utilizzato come integratore?,Cera d'api,Polline,Miele,Acqua,2
+q27,Prodotti dell'alveare,"Cosa caratterizza un miele monoflora (es. acacia, castagno)?",Ãˆ prodotto in un solo alveare,Deriva prevalentemente dal nettare di una singola specie vegetale,Non contiene polline,Non cristallizza mai,2
+q28,Prodotti dell'alveare,PerchÃ© il miele cristallizza?,PerchÃ© diventa vecchio,"Per la naturale precipitazione degli zuccheri, soprattutto glucosio",Per presenza di acqua piovana,PerchÃ© Ã¨ stato riscaldato,2
+q30,Prodotti dell'alveare,Che cos'Ã¨ la pappa reale?,Il primo miele prodotto dalle api,La secrezione con cui le api nutrono le larve e la regina,Un tipo di cera particolarmente pura,Un parassita della regina,2
+q31,Gestione dell'alveare,Quale attrezzatura Ã¨ fondamentale per la sicurezza dell'apicoltore?,Tuta o giacca protettiva con velo,Scarpe aperte,Guanti in lana,Occhiali da sole,1
+q32,Gestione dell'alveare,PerchÃ© si utilizza l'affumicatore durante le ispezioni?,Per allontanare le api dall'alveare,Per calmare le api,Per riscaldare il miele,Per disinfettare i telaini,2
+q33,Gestione dell'alveare,Quale tra questi Ã¨ un comportamento rispettoso verso le api durante la visita?,"Movimenti lenti e decisi, evitando colpi",Colpire i telaini per far volare le api,Togliere il velo per vedere meglio,Usare profumi intensi,1
+q34,Gestione dell'alveare,Cosa indica una forte presenza di celle reali lungo i bordi dei telaini?,Solo sostituzione silenziosa della regina,Probabile preparazione alla sciamatura,Assenza di varroa,Alveare orfano da mesi,2
+q35,Prodotti dell'alveare,Quale colore del miele Ã¨ tipico degli mieli di acacia italiani?,Molto chiaro quasi trasparente,Molto scuro,Verde,Rosso intenso,1
+q36,Gestione dell'alveare,PerchÃ© Ã¨ utile marcare la regina con un colore?,PerchÃ© sia piÃ¹ decorativa,Per individuarla piÃ¹ facilmente e conoscere l'anno di nascita,Per aumentare la produzione di miele,PerchÃ© non possa volare,2
+q38,Impollinazione,Quale tra questi fattori contribuisce maggiormente alla perdita di habitat per gli impollinatori?,Aumento dei prati fioriti,Intensificazione agricola e monocolture,Introduzione di siepi e filari,Riduzione dell'uso del suolo,2
+q39,Impollinazione,Come possono contribuire i giardini urbani alla tutela delle api?,Usando solo prato rasato,Coltivando fiori melliferi e evitando pesticidi inutili,Rimuovendo tutte le piante spontanee,Illuminando fortemente le piante di notte,2
+q40,Gestione dell'alveare,PerchÃ© Ã¨ importante monitorare regolarmente lo stato delle colonie?,Per aumentare il numero di punture,"Per individuare precocemente problemi di salute, spazio o nutrizione",Solo per controllare la quantitÃ di miele,Per disturbarle e ridurre la covata,2
+q41,Le api,"Nel linguaggio delle foraggere, cosa comunica soprattutto la durata del tratto rettilineo ('corrida') nella danza a otto?",Solo la ricchezza di polline,La distanza approssimativa della fonte di cibo,L'etÃ della regina,Il colore del fiore,2
+q42,Le api,Le operaie riconoscono le compagne della stessa colonia principalmente grazie a:,Solo alla lunghezza delle ali,Profilo cuticolare e feromoni,Il rumore del volo,La temperatura corporea,2
+q43,Le api,Cos'Ã¨ la trofallassi tra operaie?,Deposizione di uova,Combattimento tra casta,Scambio di liquidi alimentari e informazioni,Costruzione di cera,3
+q45,Le api,Le operaie addette alla pulizia del nido e alla rimozione dei cadaveri sono spesso chiamate:,Foraggere,Nutrici,Spazzine / portinerie,Cerifere,3
+q46,Le api,La danza rotonda comunica in genere:,Una fonte molto lontana,Una fonte vicina allâ€™alveare,Un pericolo imminente,La fine della stagione,2
+q48,Le api,Le api ventilano il nido battendo le ali per:,Deporre uova,Ridurre COâ‚‚ e regolare temperatura/umiditÃ,Costruire cera,Accoppiarsi,2
+q49,Le api,Un volo di orientamento delle giovani operaie serve soprattutto a:,Deporre polline,Imparare la posizione dellâ€™alveare rispetto al paesaggio,Eliminare la regina,Produrre propoli,2
+q51,Le api,Le antenne dellâ€™ape sono importanti soprattutto per:,Solo equilibrio in volo,Percezione chimica e tattile dellâ€™ambiente,Emissione di cera,Digestione del polline,2
+q52,Le api,Unâ€™ape foraggera che trova una buona fonte e torna al nido puÃ² reclutare compagne tramite:,Solo odor di propoli,Danze e contatto antennale,Solo fuco,Deposito di cera,2
+q53,Le api,"In termini biologici, la sciamatura rappresenta soprattutto:",Perdita accidentale di api,Riproduzione della colonia a livello di superorganismo,Solo raccolta di polline,Malattia della covata,2
+q54,Le api,"Dopo lo sciame principale, nella colonia madre restano tipicamente:",Solo fuchi,Operaie e celle reali con nuove regime in sviluppo,Sempre la vecchia regina,Nessuna covata,2
+q55,Le api,Le celle reali pendenti lungo il margine del favo sono destinate a:,Deporre uova di fuco,Sviluppare nuove regime,Conservare miele,Raccogliere polline,2
+q56,Le api,"In clima temperato, la sciamatura naturale Ã¨ piÃ¹ frequente in genere:",In pieno inverno,Tarda primavera / inizio estate,Solo in autunno secco,Durante la neve,2
+q57,Le api,Una colonia molto popolosa e senza spazio sufficiente di covata tende a:,Estinguersi in giorni,Aumentare il rischio di sciamatura,Produrre solo cera senza covata,Perdere tutte le ali,2
+q58,Le api,"Per ridurre sciamature indesiderati lâ€™apicoltore puÃ², tra le altre cose:",Chiudere per mesi il volo,"Dare spazio (melari/telai), dividere o gestire celle reali",Eliminare tutta la covata,Togliere tutte le operaie anziane,2
+q59,Le api,Il volo nuziale della regina vergine serve a:,Deporre subito uova fecondate senza accoppiamento,Accoppiarsi con piÃ¹ fuchi in volo,Solo ventilare il nido,Migrare in altro continente,2
+q60,Le api,Una sciamatura secondaria puÃ² verificarsi quando:,Non esiste mai,Una nuova regina vergine esce con un nuovo sciame,Solo in laboratorio,Solo senza miele,2
+q61,Le api,Il feromone Nasonov secreto dalle operaie serve soprattutto a:,Uccidere la varroa,Segnare orientamento verso sedi (es. ingresso alveare o sciame),Cristallizzare il miele,Fermare la covata,2
+q62,Le api,Catturare uno sciame appollaiato su un ramo si fa di solito:,Spruzzando benzina,Scuotendo o tagliando il ramo in un contenitore e trasferendo in arnia,Lasciandolo sempre al sole fino a morte,Solo di notte senza mai aprire,2
+q63,Le api,Uno â€œsciame artificialeâ€ puÃ² essere creato per:,Aumentare le punture,Moltiplicare colonie o rinfoltire nuclei,Eliminare la propoli,Sostituire lâ€™acqua piovana,2
+q64,Le api,Subito dopo lâ€™ingresso di uno sciame in arnia nuova Ã¨ buona norma:,Chiudere tutto per tre mesi,Controllare costruzione su telai/fondazione e nutrire se risorse scarse,Rimuovere la regina,Aggiungere solo fuchi,2
+q65,Gestione dell'alveare,Varroa destructor Ã¨ un:,Virus intestinale,Acaro ectoparassita,Fungo del favo,Insetto predatore delle api,2
+q66,Gestione dell'alveare,Ali deformi nelle operaie emergenti sono spesso correlate a:,Solo freddo notturno,Virus (es. DWV) in associazione a carica elevata di varroa,Troppo miele chiaro,Solo mancanza di polline,2
+q67,Gestione dell'alveare,Nosema apis / ceranae Ã¨:,Un acaro,Un microsporidio che colpisce lâ€™intestino,Un batterio della covata,Un nematode,2
+q69,Gestione dell'alveare,La calcificazione (chalkbrood) Ã¨ dovuta a:,Batterio,Fungo Ascosphaera su larve,Acaro,Virus DWV,2
+q72,Gestione dell'alveare,Lâ€™acaro delle trachee (Acarapis woodi) vive:,Nel miele,Nel sistema tracheale delle api,Solo sulle ali,Nel terreno,2
+q73,Gestione dell'alveare,La â€œsparizioneâ€ massiccia di operaie (sindrome tipo CCD) Ã¨ considerata in genere:,Dovuta a un solo virus identificato,"Multifattoriale (patogeni, nutrizione, pesticidi, gestioneâ€¦)",Normale ogni primavera,Curabile solo con zucchero invertito,2
+q74,Gestione dell'alveare,La melata prodotta dagli afidi puÃ² favorire:,Crescita piÃ¹ lenta delle piante,Sviluppo di muffe fuligginose sulle foglie,Eliminazione della varroa,Cristallizzazione istantanea del miele,2
+q75,Gestione dell'alveare,"Gli acidi organici contro varroa (es. formico, ossalico) vanno usati:",In qualsiasi momento senza leggere etichetta,"Seguendo scheda tecnica, dosi e limitazioni (covata, temperatura, residui)",Solo con colonie deboli,Solo a dicembre al polo sud,2
+q77,Gestione dell'alveare,L'affumicatore serve principalmente a:,Nutrire le api,Calmare le api mascherando feromoni di allarme e inducendo carica di miele,Sterilizzare i telai,Misurare la temperatura,2
+q78,Gestione dell'alveare,Nel affuicatore Ã¨ opportuno bruciare materiali che:,Producano fiamma alta continua,Brucino lentamente senza tossicitÃ per api e apicoltore,Siano sempre impregnati di benzina,Siano solo plastica,2
+q79,Gestione dell'alveare,la leva serve a:,Tagliare la regina,Sollevare telai incollati da propoli o cera,Misurare il peso,Ventilare,2
+q81,Gestione dell'alveare,Il velo o maschera apistica protegge soprattutto:,Solo le mani,Viso e collo,Solo i piedi,Solo i telai,2
+q82,Gestione dell'alveare,Un escludi-regina  serve a:,Far entrare solo i fuchi,Impedire alla regina di salire a deporre uova nel melario,Riscaldare il melario,Bloccare il volo di tutte le api,2
+q83,Gestione dell'alveare,La bilancia sotto arnia Ã¨ utile per:,Contare le singole api,Monitorare peso e andamento di scorte/raccolta,Misurare solo la regina,Decorazione,2
+q86,Gestione dell'alveare,"Registri di apiario (trattamenti, movimenti, produzione) sono importanti per:",Solo decoro,"TracciabilitÃ , normativa e buona gestione",Nessun motivo,Solo vendere cera,2
+q88,Gestione dell'alveare,Un fumo eccessivo o troppo caldo puÃ²:,Essere indifferente,Stressare o bruciare le api,Eliminare la varroa da solo,Sostituire la regina,2
+q89,Prodotti dell'alveare,Il veleno dâ€™ape contiene soprattutto:,Solo zucchero,"Peptidi come melittina, apamina e enzimi (es. fosfolipasi)",Solo cera,Nettare concentrato,2
+q90,Prodotti dell'alveare,Una reazione anafilattica a puntura di ape:,Ãˆ sempre normale,Ãˆ unâ€™emergenza medica potenzialmente letale in soggetti sensibilizzati,Si cura solo con miele,Succede solo ai fuchi,2
+q91,Prodotti dell'alveare,La propoli per le api Ã¨ soprattutto:,Un tipo di miele scuro,Resine vegetali raccolte e mescolate a secrezioni e cera,Polline pressato,Acqua di fiori,2
+q92,Prodotti dell'alveare,La pappa reale Ã¨ prodotta da:,La regina,Ghiandole delle operaie (ipofaringee e mandibolari),I fuchi,I fiori,2
+q93,Prodotti dell'alveare,Il veleno dâ€™ape per uso terapeutico o di laboratorio richiede:,Solo raccolta manuale con pinze,Dispositivi e procedure specializzate e normative,Nessuna cautela,Solo miele diluito,2
+q94,Prodotti dell'alveare,"Dopo una puntura, la prima cosa utile Ã¨ spesso:",Premere forte il veleno dentro,Rimuovere rapidamente il pungiglione per ridurre lâ€™iniezione,Applicare miele caldo obbligatoriamente,Ignorare sempre la reazione,2
+q96,Prodotti dell'alveare,Il polline dâ€™api come alimento umano Ã¨ apprezzato per:,Solo grassi saturi,"Proteine, vitamine, minerali e fitocomposti",Assenza totale di zuccheri,Solo alcool,2
+q97,Prodotti dell'alveare,Lâ€™apitossicazione massiccia (molte punture) puÃ² essere pericolosa perchÃ©:,Non inietta veleno,Somma dose di tossine e mediatori dellâ€™infiammazione,Succede solo dâ€™inverno,Ãˆ solo estetica,2
+q99,Prodotti dell'alveare,La melittina nel veleno dâ€™ape Ã¨ nota per:,Dolcificare il miele,ProprietÃ lisante sulle membrane cellulari,Produrre cera,Eliminare la covata,2

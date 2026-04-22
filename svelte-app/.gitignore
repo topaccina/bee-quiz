@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Sheet export + regen script at repo root (local only)
+../App quiz Bees - Foglio1.csv
+../regenerate_questions_from_csv.py
