@@ -1,5 +1,9 @@
 # Netlify: install + build devono avvenire dove c'è package.json (svelte-app).
 # Solo "npm run build --prefix svelte-app" non esegue npm install in quella cartella → vite: not found
+#
+# Supabase (Site configuration → Environment variables): set VITE_SUPABASE_URL and
+# VITE_SUPABASE_ANON_KEY (publishable key only), then trigger a new deploy. Do not set
+# SUPABASE_SERVICE_ROLE_KEY for the static site build.
 
 [build]
   base = "svelte-app"

@@ -5,6 +5,7 @@
     selectRoundQuestions,
     validateQuestionData
   } from './quizLogic'
+  import { loadQuestionData } from './lib/loadQuestionData'
   import type { AnswerRecord, Question, QuestionData } from './quizTypes'
 
   const ROUND_QUESTION_COUNT = 20
@@ -35,11 +36,7 @@
 
   async function loadQuestions() {
     try {
-      const res = await fetch('/questions.json')
-      if (!res.ok) {
-        throw new Error(`Failed to load questions.json (${res.status})`)
-      }
-      const data = (await res.json()) as QuestionData
+      const data = await loadQuestionData()
       validateQuestionData(data)
       questionData = data
     } catch (err) {
@@ -174,7 +171,7 @@
               {/each}
             </ul>
           {:else}
-            <p class="setup-stat setup-stat--warn">Nessuna domanda in questions.json.</p>
+            <p class="setup-stat setup-stat--warn">Nessuna domanda nel catalogo.</p>
           {/if}
         </div>
 

@@ -8,9 +8,14 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
-    "export:questions-doc": "node scripts/export-questions-documentation.mjs"
+    "export:questions-doc": "node scripts/export-questions-documentation.mjs",
+    "seed:supabase": "node scripts/seed-supabase.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1"
   },
   "devDependencies": {
+    "dotenv": "^16.4.7",
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "@tsconfig/svelte": "^5.0.8",
     "@types/node": "^24.12.0",
