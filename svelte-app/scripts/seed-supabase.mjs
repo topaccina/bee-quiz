@@ -41,24 +41,20 @@ const supabase = createClient(url, serviceKey, {
   auth: { persistSession: false, autoRefreshToken: false }
 })
 
-const topicPayload = topics.map((t) => ({ key: t.key, label: t.label }))
-const { error: tErr } = await supabase.from('topics').upsert(topicPayload, {
-  onConflict: 'key'
-})
-if (tErr) {
-  console.error('topics upsert:', tErr.message)
-  process.exit(1)
-}
+const topicMap = new Map(topics.map((t) => [t.key, t.label]))
 
 const questionPayload = questions.map((q, idx) => ({
   id: q.id,
-  sort_index: idx,
-  text: q.text,
-  options: q.options,
-  correct_index: q.correctIndex,
   topic_key: q.topicKey,
+  topic_label: topicMap.get(q.topicKey) ?? q.topicKey,
+  text: q.text,
+  option_1: q.options[0],
+  option_2: q.options[1],
+  option_3: q.options[2],
+  option_4: q.options[3],
+  correct_index: q.correctIndex,
   explanation: q.explanation ?? '',
-  time_limit_seconds: q.timeLimitSeconds ?? null
+  time_limit_seconds: q.timeLimitSeconds ?? 25
 }))
 
 const chunk = 200
@@ -74,4 +70,4 @@ for (let i = 0; i < questionPayload.length; i += chunk) {
   console.log(`Upserted questions ${i + 1}–${i + slice.length} of ${questionPayload.length}`)
 }
 
-console.log('Done. Topics:', topicPayload.length, 'Questions:', questionPayload.length)
+console.log('Done. Questions:', questionPayload.length)

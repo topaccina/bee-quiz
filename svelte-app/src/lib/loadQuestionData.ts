@@ -1,54 +1,46 @@
 import { createClient } from '@supabase/supabase-js'
 import type { QuestionData } from '../quizTypes'
 
-type TopicRow = { key: string; label: string }
 type QuestionRow = {
   id: string
-  text: string
-  options: unknown
-  correct_index: number
   topic_key: string
+  topic_label: string
+  text: string
+  option_1: string
+  option_2: string
+  option_3: string
+  option_4: string
+  correct_index: number
   explanation: string
   time_limit_seconds: number | null
-}
-
-function isStringArray(value: unknown): value is string[] {
-  return Array.isArray(value) && value.every((x) => typeof x === 'string')
 }
 
 async function loadFromSupabase(url: string, anonKey: string): Promise<QuestionData> {
   const supabase = createClient(url, anonKey)
 
-  const { data: topicRows, error: topicErr } = await supabase
-    .from('topics')
-    .select('key, label')
-    .order('key', { ascending: true })
-
-  if (topicErr) {
-    throw new Error(`Supabase topics: ${topicErr.message}`)
-  }
-
   const { data: questionRows, error: qErr } = await supabase
     .from('questions')
-    .select('id, text, options, correct_index, topic_key, explanation, time_limit_seconds')
-    .order('sort_index', { ascending: true })
+    .select(
+      'id, topic_key, topic_label, text, option_1, option_2, option_3, option_4, correct_index, explanation, time_limit_seconds',
+    )
     .order('id', { ascending: true })
 
   if (qErr) {
     throw new Error(`Supabase questions: ${qErr.message}`)
   }
 
-  const topics = (topicRows ?? []) as TopicRow[]
   const rawQs = (questionRows ?? []) as QuestionRow[]
+  const topicMap = new Map<string, string>()
 
   const questions = rawQs.map((row) => {
-    if (!isStringArray(row.options) || row.options.length !== 4) {
-      throw new Error(`Question ${row.id}: options must be an array of 4 strings`)
+    if (row.correct_index < 0 || row.correct_index > 3) {
+      throw new Error(`Question ${row.id}: correct_index must be between 0 and 3`)
     }
+    topicMap.set(row.topic_key, row.topic_label)
     const q = {
       id: row.id,
       text: row.text,
-      options: row.options,
+      options: [row.option_1, row.option_2, row.option_3, row.option_4],
       correctIndex: row.correct_index,
       topicKey: row.topic_key,
       explanation: row.explanation,
@@ -58,6 +50,10 @@ async function loadFromSupabase(url: string, anonKey: string): Promise<QuestionD
     }
     return q
   })
+
+  const topics = Array.from(topicMap.entries())
+    .map(([key, label]) => ({ key, label }))
+    .sort((a, b) => a.key.localeCompare(b.key))
 
   return { topics, questions }
 }
