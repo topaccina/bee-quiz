@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
     "export:questions-doc": "node scripts/export-questions-documentation.mjs",
-    "seed:supabase": "node scripts/seed-supabase.mjs"
+    "import:questions": "node scripts/csv-to-questions.mjs",
+    "seed:supabase": "node scripts/seed-supabase.mjs",
+    "refresh:questions": "npm run import:questions && npm run seed:supabase"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1"

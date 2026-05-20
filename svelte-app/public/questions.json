@@ -15,6 +15,14 @@
     {
       "key": "bee_products",
       "label": "Prodotti dell'alveare"
+    },
+    {
+      "key": "diseases",
+      "label": "Malattie e parassiti"
+    },
+    {
+      "key": "apiary_regulations",
+      "label": "Normativa apistica"
     }
   ],
   "questions": [
@@ -302,7 +310,7 @@
       "id": "q21",
       "text": "Quale comportamento può indicare che una colonia è orfana (senza regina)?",
       "options": [
-        "Rumore più forte e agitazione sulle api",
+        "Api che ventilano e sono agitate",
         "Calma e volo regolare",
         "Maggiore raccolta di nettare",
         "Formazione di barbe di api all'esterno"
@@ -380,7 +388,7 @@
       "correctIndex": 1,
       "topicKey": "bee_products",
       "explanation": "Un miele monoflora deriva in gran parte dal nettare di una singola specie di pianta.",
-      "timeLimitSeconds": 25
+      "timeLimitSeconds": 20
     },
     {
       "id": "q27",
@@ -414,7 +422,7 @@
       "id": "q29",
       "text": "Quale attrezzatura è fondamentale per la sicurezza dell'apicoltore?",
       "options": [
-        "Tuta o giacca protettiva con velo",
+        "Tuta o giacca e maschera di protezione",
         "Scarpe aperte",
         "Guanti in lana",
         "Occhiali da sole"
@@ -582,7 +590,7 @@
       "id": "q41",
       "text": "Le operaie addette alla pulizia del nido e alla rimozione dei cadaveri sono spesso chiamate:",
       "options": [
-        "Spazzine / portinerie",
+        "Spazzine",
         "Foraggere",
         "Nutrici",
         "Cerifere"
@@ -612,7 +620,7 @@
       "options": [
         "Deporre uova",
         "Costruire cera",
-        "Ridurre CO₂ e regolare temperatura/umidità",
+        "Ridurre CO2 e regolare temperatura/umidità",
         "Accoppiarsi"
       ],
       "correctIndex": 2,
@@ -683,7 +691,7 @@
         "Solo fuchi",
         "Sempre la vecchia regina",
         "Nessuna covata",
-        "Operaie e celle reali con nuove regime in sviluppo"
+        "Operaie e celle reali con nuove regine in sviluppo"
       ],
       "correctIndex": 3,
       "topicKey": "bees",
@@ -701,7 +709,7 @@
       ],
       "correctIndex": 0,
       "topicKey": "bees",
-      "explanation": "Le celle reali contengono larve femminili nutrite abbondantemente per diventare regime vergini.",
+      "explanation": "Le celle reali contengono larve femminili nutrite abbondantemente per diventare regine vergini.",
       "timeLimitSeconds": 25
     },
     {
@@ -1178,6 +1186,1392 @@
       "correctIndex": 2,
       "topicKey": "bee_products",
       "explanation": "È uno dei principali peptidi citotossici del veleno.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q84",
+      "text": "Quale sostanza producono le api operaie giovani (età 5-15 giorni circa) dalle ghiandole ipofaringee per nutrire le larve?",
+      "options": [
+        "Miele",
+        "Propoli",
+        "Pappa reale",
+        "Polline"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bees",
+      "explanation": "Le ghiandole ipofaringee delle giovani operaie producono la pappa reale.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q85",
+      "text": "Le api hanno quanti stomaci?",
+      "options": [
+        "1",
+        "2 (uno personale e uno sociale)",
+        "3",
+        "4"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Lo stomaco sociale (borsa melaria) serve a trasportare nettare, lo stomaco personale digerisce.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q86",
+      "text": "La \"barba\" di api all'esterno dell'alveare in estate indica solitamente:",
+      "options": [
+        "La colonia è orfana",
+        "La regina è morta da poco",
+        "Eccesso di calore e bisogno di ventilazione",
+        "Presenza di varroa elevata"
+      ],
+      "correctIndex": 2,
+      "topicKey": "hive_management",
+      "explanation": "Le api si dispongono a grappolo fuori per raffreddare l'alveare quando la temperatura interna è troppo alta.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q87",
+      "text": "La cera d'api viene prodotta dalle operaie dalle ghiandole situate:",
+      "options": [
+        "Sulle antenne",
+        "Sul torace",
+        "Sull'addome (piastrine ceripare)",
+        "Sulle zampe"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bee_products",
+      "explanation": "Le ghiandole ceripare si trovano sul lato inferiore dell'addome delle operaie di 12-18 giorni circa.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q88",
+      "text": "Quale percentuale approssimativa della produzione alimentare mondiale dipende dall'impollinazione animale?",
+      "options": [
+        "10%",
+        "35%",
+        "75%",
+        "95%"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "Circa un terzo del cibo che mangiamo dipende direttamente o indirettamente dagli impollinatori.",
+      "timeLimitSeconds": 30
+    },
+    {
+      "id": "q90",
+      "text": "Quante uova può deporre una buona regina in una giornata di picco primaverile?",
+      "options": [
+        "200-300",
+        "500-800",
+        "1000-2000",
+        "Più di 3000"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bees",
+      "explanation": "Una regina giovane e ben nutrita può deporre fino a 1500-2000 uova al giorno.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q91",
+      "text": "Il \"miele di manna\" o melata deriva principalmente da:",
+      "options": [
+        "Nettare di fiori",
+        "Secrezioni di afidi e coccidi su piante",
+        "Polline raccolto",
+        "Acqua di rugiada"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Le api raccolgono la melata (escrezioni zuccherine degli afidi) e la trasformano in miele scuro e ricco di minerali.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q94",
+      "text": "Qual è il limite massimo di umidità consigliato per un miele di buona conservazione?",
+      "options": [
+        "14%",
+        "18%",
+        "22%",
+        "25%"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Un'umidità superiore al 18-18,5% aumenta notevolmente il rischio di fermentazione.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q95",
+      "text": "Perché il miele di robinia (acacia) cristallizza molto lentamente?",
+      "options": [
+        "Alto contenuto di fruttosio",
+        "Alto contenuto di glucosio",
+        "Presenza di polline di castagno",
+        "Bassa umidità"
+      ],
+      "correctIndex": 0,
+      "topicKey": "bee_products",
+      "explanation": "Il suo alto tenore di fruttosio rispetto al glucosio ritarda notevolmente la cristallizzazione.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q96",
+      "text": "Quale miele tipico lombardo è scuro, aromatico e ha un sapore leggermente amaro?",
+      "options": [
+        "Miele di corbezzolo",
+        "Miele di erica",
+        "Miele di castagno",
+        "Miele di timo"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bee_products",
+      "explanation": "Il miele di castagno è caratterizzato da colore ambrato-scuro e gusto deciso e persistente.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q97",
+      "text": "Il processo di cristallizzazione del miele è:",
+      "options": [
+        "Un difetto da evitare",
+        "Sempre indesiderato",
+        "Un fenomeno fisico naturale legato al rapporto glucosio/fruttosio",
+        "Provocato solo dal riscaldamento"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bee_products",
+      "explanation": "È un processo spontaneo e reversibile; non indica cattiva qualità.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q98",
+      "text": "Quale miele ha colore chiaro quasi trasparente e aroma delicato di fiori?",
+      "options": [
+        "Miele di castagno",
+        "Miele di robinia (acacia)",
+        "Miele di tiglio d'estate",
+        "Miele di melata"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Il miele di robinia è il classico miele chiaro, molto dolce e fluido.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q99",
+      "text": "Durante la lavorazione, cosa significa \"decantazione\" del miele?",
+      "options": [
+        "Riscaldarlo a 70°C",
+        "Lasciarlo riposare in vasche per far salire in superficie impurità e schiuma",
+        "Filtrarlo a maglia strettissima",
+        "Aggiungere zucchero"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "La decantazione permette di ottenere un miele più pulito prima dell'imbottigliamento.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q100",
+      "text": "Il miele di tiglio è noto soprattutto per:",
+      "options": [
+        "Sapore molto forte e amaro",
+        "Note aromatiche fresche e mentolate",
+        "Colore nerissimo",
+        "Cristallizzazione istantanea"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Ha un aroma caratteristico leggermente balsamico e mentolato.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q101",
+      "text": "Un miele con umidità superiore al 20% rischia principalmente:",
+      "options": [
+        "Di cristallizzare troppo velocemente",
+        "La fermentazione alcolica",
+        "Di perdere aroma",
+        "Di diventare tossico"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Un'umidità elevata favorisce lo sviluppo di lieviti e la fermentazione.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q102",
+      "text": "Quale operazione di lavorazione è sconsigliata per mantenere le proprietà del miele?",
+      "options": [
+        "Scaldarlo sopra i 40-45°C a lungo",
+        "Decantazione naturale",
+        "Estrazione con smielatore",
+        "Filtrazione grossolana"
+      ],
+      "correctIndex": 0,
+      "topicKey": "bee_products",
+      "explanation": "Il riscaldamento eccessivo (pasteurizzazione forte) distrugge enzimi, aromi e proprietà benefiche.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q103",
+      "text": "Quale tra questi è un miele di melata tipico di alcune zone alpine della Lombardia?",
+      "options": [
+        "Miele di robinia",
+        "Miele di castagno d'estate",
+        "Miele di abete o di quercia",
+        "Miele di tiglio"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bee_products",
+      "explanation": "Le melate (es. di abete o quercia) sono scure, ricche di minerali e meno dolci.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q104",
+      "text": "In analisi sensoriale, cosa si valuta principalmente nel miele?",
+      "options": [
+        "Solo il colore",
+        "Solo il prezzo",
+        "Colore, odore, sapore, consistenza e persistenza aromatica",
+        "Solo la densità"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bee_products",
+      "explanation": "L'analisi sensoriale professionale prevede esame visivo, olfattivo, gustativo e tattile.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q105",
+      "text": "Qual è la differenza principale tra miele crudo e miele pastorizzato?",
+      "options": [
+        "Il miele crudo non viene mai scaldato sopra i 40-45°C",
+        "Il miele pastorizzato ha più proprietà",
+        "Il miele crudo cristallizza sempre",
+        "Il miele pastorizzato è più economico"
+      ],
+      "correctIndex": 0,
+      "topicKey": "bee_products",
+      "explanation": "Il miele crudo mantiene enzimi (es. glucosio ossidasi), aromi e polline intatti.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q106",
+      "text": "Secondo la normativa europea, il miele deve essere etichettato come:",
+      "options": [
+        "\"Miele di apicoltura biologica\"",
+        "\"Miele italiano\" solo se proviene interamente dall'Italia",
+        "Miele di fiori o \"di melata\"",
+        "Solo con il nome del produttore"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Per usare la dicitura \"Miele italiano\" deve provenire al 100% da Italia.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q108",
+      "text": "Per conservare correttamente il miele in casa è meglio:",
+      "options": [
+        "Metterlo in frigorifero",
+        "Tenerlo in luogo fresco, asciutto e al buio",
+        "Lasciarlo vicino ai fornelli",
+        "Conservarlo in contenitori di plastica trasparente"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Caldo e luce accelerano la cristallizzazione e degradano gli aromi.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q109",
+      "text": "Un miele DOP (Denominazione di Origine Protetta) garantisce:",
+      "options": [
+        "Solo il colore",
+        "Solo il prezzo basso",
+        "Origine geografica e metodo di produzione controllato",
+        "Che è sempre liquido"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bee_products",
+      "explanation": "Es. Miele della Lunigiana DOP o altri disciplinari regionali.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q110",
+      "text": "Durante la degustazione, la \"persistenza aromatica\" si riferisce a:",
+      "options": [
+        "Quanto tempo resta il sapore in bocca dopo averlo deglutito",
+        "Quanto è scuro il colore",
+        "Quanto è dolce",
+        "Quanto è fluido"
+      ],
+      "correctIndex": 0,
+      "topicKey": "bee_products",
+      "explanation": "È uno dei parametri più importanti nella valutazione sensoriale professionale.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q112",
+      "text": "Quale trattamento è vietato per il miele destinato alla vendita come \"miele vergine\"?",
+      "options": [
+        "Riscaldamento sopra 40°C",
+        "Decantazione",
+        "Estrazione con smielatore",
+        "Filtrazione a maglia larga"
+      ],
+      "correctIndex": 0,
+      "topicKey": "bee_products",
+      "explanation": "Il miele non deve subire trattamenti termici che ne alterino le caratteristiche naturali.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q114",
+      "text": "Quanto dura mediamente lo stadio di uovo nella ape mellifera?",
+      "options": [
+        "1 giorno",
+        "3 giorni",
+        "9 giorni",
+        "21 giorni"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "L'uovo viene deposto dalla regina e si schiude dopo circa 3 giorni.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q115",
+      "text": "Per quanto tempo la larva di ape operaia viene nutrita con pappa reale?",
+      "options": [
+        "Solo il primo giorno",
+        "Tutti i 6 giorni di stadio larvale",
+        "Solo gli ultimi 2 giorni",
+        "Mai"
+      ],
+      "correctIndex": 0,
+      "topicKey": "bees",
+      "explanation": "Nei primi giorni tutte le larve femminili ricevono pappa reale; poi solo le regine continuano.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q116",
+      "text": "Qual è la durata totale dello sviluppo da uovo a ape adulta per un'operaia?",
+      "options": [
+        "16 giorni",
+        "21 giorni",
+        "24 giorni",
+        "28 giorni"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Uovo (3) + larva (6) + pupa (12) = 21 giorni circa.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q117",
+      "text": "Quanti giorni dura lo stadio di pupa in un'operaia?",
+      "options": [
+        "6 giorni",
+        "8 giorni",
+        "12 giorni",
+        "18 giorni"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bees",
+      "explanation": "Durante la pupa l'ape si trasforma completamente all'interno della cella opercolata.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q118",
+      "text": "Quale casta vive più a lungo?",
+      "options": [
+        "Fuco",
+        "Operaia estiva",
+        "Regina",
+        "Operaia invernale"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bees",
+      "explanation": "Una regina ben nutrita può vivere 3-5 anni, mentre le operaie vivono poche settimane (estive) o mesi (invernali).",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q119",
+      "text": "Le operaie cambiano compito in base all'età (età polivalente). Quale compito svolgono tipicamente tra i 12 e 18 giorni?",
+      "options": [
+        "Pulizia delle celle",
+        "Nutrici di larva",
+        "Cerifere (produzione di cera)",
+        "Foraggere"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bees",
+      "explanation": "Tra i 12-18 giorni circa le operaie producono cera dalle ghiandole ceripare.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q120",
+      "text": "Qual è il compito principale dei fuchi?",
+      "options": [
+        "Raccogliere nettare",
+        "Ventilare l'alveare",
+        "Fecondare la regina vergine",
+        "Pulire le celle"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bees",
+      "explanation": "I fuchi hanno solo funzione riproduttiva e vengono espulsi in autunno.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q121",
+      "text": "Quante uova può deporre una regina in un solo giorno nella stagione di massimo sviluppo?",
+      "options": [
+        "200-400",
+        "500-800",
+        "1000-2000",
+        "Più di 3000"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bees",
+      "explanation": "Una buona regina depone fino a 1500-2000 uova al giorno.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q122",
+      "text": "Le api operaie invernali vivono più a lungo di quelle estive perché:",
+      "options": [
+        "Hanno ali più grandi",
+        "Hanno meno lavoro e accumulano più riserve grasse",
+        "Nascono già vecchie",
+        "Non fanno mai voli"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Le api invernali hanno un organismo diverso (più grasso corporeo) e vivono 4-6 mesi.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q123",
+      "text": "Quale feromone prodotto dalla regina inibisce la costruzione di celle reali e lo sviluppo ovarico nelle operaie?",
+      "options": [
+        "Feromone Nasonov",
+        "Feromone della regina (QMP)",
+        "Feromone di allarme",
+        "Acido oleico"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Il QMP (Queen Mandibular Pheromone) mantiene la coesione sociale e impedisce alle operaie di diventare regine.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q126",
+      "text": "Le celle reali (o celle da sciame) si riconoscono perché:",
+      "options": [
+        "Sono più piccole delle celle di operaia",
+        "Sono situate al centro del favo",
+        "Sono grandi, pendenti e poste sui bordi inferiori dei telai",
+        "Hanno colore scuro"
+      ],
+      "correctIndex": 2,
+      "topicKey": "bees",
+      "explanation": "Le celle reali sono visibilmente più grandi e pendono verso il basso.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q127",
+      "text": "Quando la colonia costruisce molte celle reali lungo i bordi inferiori significa tipicamente:",
+      "options": [
+        "Che la regina è vecchia e va sostituita",
+        "Che la colonia si sta preparando alla sciamatura",
+        "Che c'è carenza di polline",
+        "Che è orfana"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "La presenza abbondante di celle reali è il segnale classico di imminente sciamatura.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q128",
+      "text": "L'acido ossalico per il controllo della varroa si usa principalmente:",
+      "options": [
+        "In qualsiasi momento dell'anno",
+        "Durante la presenza di covata opercolata",
+        "In assenza di covata (autunno/inverno)",
+        "Solo in primavera"
+      ],
+      "correctIndex": 2,
+      "topicKey": "hive_management",
+      "explanation": "In assenza di covata è molto efficace e meno stressante per le api.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q129",
+      "text": "Il timolo viene utilizzato in apicoltura principalmente per:",
+      "options": [
+        "Stimolare la produzione di miele",
+        "Controllare la varroa e alcuni funghi (es. nosema)",
+        "Aumentare la produzione di cera",
+        "Attirare gli sciami"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Si usa sotto forma di pastiglie o gel per il controllo della varroa.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q130",
+      "text": "Quando si applica l'acido ossalico per sublimazione è necessario:",
+      "options": [
+        "Usare mascherina e dispositivi di protezione",
+        "Scaldare l'alveare prima",
+        "Applicarlo solo di giorno con forte volo",
+        "Nessuna precauzione"
+      ],
+      "correctIndex": 0,
+      "topicKey": "hive_management",
+      "explanation": "È un trattamento che richiede dispositivi specifici e protezioni per l'apicoltore.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q131",
+      "text": "Quale tra questi è un vantaggio dell'acido formico rispetto all'ossalico?",
+      "options": [
+        "È efficace anche con covata presente",
+        "È più economico",
+        "Non lascia residui",
+        "È meno pericoloso per le api"
+      ],
+      "correctIndex": 0,
+      "topicKey": "hive_management",
+      "explanation": "L'acido formico penetra nella covata opercolata, utile in periodi con covata.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q132",
+      "text": "È obbligatorio registrare i trattamenti contro la varroa?",
+      "options": [
+        "No, solo per i farmaci veterinari",
+        "Sì, nei registri di apiario per tracciabilità",
+        "Solo se si usa ossalico",
+        "No, è facoltativo"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "La normativa richiede la registrazione di tutti i trattamenti sanitari.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q133",
+      "text": "Il timolo può lasciare residui nel miele se:",
+      "options": [
+        "Si usa correttamente in autunno",
+        "Si applica durante la raccolta del miele",
+        "Si usa solo in primavera",
+        "Non lascia mai residui"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Va rispettato il tempo di sospensione indicato sulla scheda tecnica.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q134",
+      "text": "Quanti occhi composti ha un'ape adulta?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Le api hanno due grandi occhi composti ai lati della testa.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q135",
+      "text": "La \"rotazione dei telaini\" serve principalmente a:",
+      "options": [
+        "Aumentare la produzione di polline",
+        "Rinnovare la cera vecchia e ridurre accumulo di residui",
+        "Far crescere più fuchi",
+        "Diminuire la popolazione"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "La cera vecchia accumula spore e residui; sostituirla migliora la salute.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q136",
+      "text": "Le api mellifere sono considerate \"impollinatori generalisti\" perché:",
+      "options": [
+        "Impollinano solo una specie di pianta",
+        "Visitano moltissime specie floreali diverse",
+        "Sono attive solo di notte",
+        "Impollinano solo alberi da frutto"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "Visitano centinaia di specie vegetali diverse durante la stagione.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q138",
+      "text": "Un buon metodo per valutare la forza di una colonia è:",
+      "options": [
+        "Contare le api in volo",
+        "Valutare la copertura di api sui telaini (es. 6-8 telaini coperti)",
+        "Misurare solo la quantità di miele",
+        "Contare le celle reali"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "La \"copertura api\" è uno dei parametri più usati dagli apicoltori esperti.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q139",
+      "text": "Le api operaie estive vivono in media:",
+      "options": [
+        "6-8 giorni",
+        "3-6 settimane",
+        "3-6 mesi",
+        "1 anno"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Le foraggere estive hanno vita breve a causa dell'intenso lavoro.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q140",
+      "text": "La \"unione di due colonie deboli\" si fa meglio:",
+      "options": [
+        "Unendo senza giornale",
+        "Con il metodo del giornale (foglio di giornale tra i due alveari)",
+        "Di notte con forte fumo",
+        "Solo in primavera"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Il giornale permette alle api di abituarsi gradualmente all'odore.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q141",
+      "text": "Il polline d'api per uso umano deve essere:",
+      "options": [
+        "Raccolto solo da fiori di castagno",
+        "Congelato subito dopo la raccolta per conservarne le proprietà o essiccato",
+        "Scaldato a 60°C",
+        "Conservato a temperatura ambiente"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Il congelamento rapido preserva vitamine, enzimi e proprietà nutrizionali.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q142",
+      "text": "Perché è utile fare il \"test di caduta naturale di varroa\"?",
+      "options": [
+        "Per contare le api morte",
+        "Sapere quante varroe cadono in 24-48 ore senza trattamento",
+        "Per misurare l'umidità nell'alveare",
+        "Per controllare la regina"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "È un metodo di monitoraggio importante per decidere se e quando trattare.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q143",
+      "text": "Il \"pungiglione\" dell'ape operaia è:",
+      "options": [
+        "Liscio e può essere ritirato",
+        "Uncinato: rimane nella pelle e stacca l'apparato",
+        "Usato solo dai fuchi",
+        "Presente solo nella regina"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Quando punge un mammifero, l'ape lascia il pungiglione e muore.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q144",
+      "text": "Quale pratica agricola favorisce maggiormente le api selvatiche oltre a quelle mellifere?",
+      "options": [
+        "Monocolture intensive",
+        "Sfalcio frequente dei bordi campo",
+        "Fasce fiorite e siepi naturali",
+        "Pesticidi sistemici"
+      ],
+      "correctIndex": 2,
+      "topicKey": "pollination",
+      "explanation": "Le fasce fiorite e gli elementi naturali aumentano la biodiversità degli impollinatori.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q145",
+      "text": "Il melario va aggiunto quando:",
+      "options": [
+        "La colonia è debole",
+        "La colonia ha occupato bene i telai di covata e c'è forte flusso di nettare",
+        "In autunno",
+        "Quando ci sono molte celle reali"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Si aggiunge quando la colonia è forte e c'è abbondanza di nettare.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q146",
+      "text": "Le giovani operaie (prime 2-3 settimane) svolgono principalmente compiti \"dentro l'alveare\" detti:",
+      "options": [
+        "Foraggiatrici",
+        "Nutrici e spazzine",
+        "Cerifere e guardiane",
+        "Regine di riserva"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Le prime fasi della vita sono dedicate a compiti interni (pulizia, nutrizione, costruzione).",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q147",
+      "text": "Un buon apicoltore dovrebbe visitare le colonie con che frequenza in alta stagione?",
+      "options": [
+        "Mai",
+        "Una volta al mese",
+        "Ogni 7-10 giorni",
+        "Ogni giorno"
+      ],
+      "correctIndex": 2,
+      "topicKey": "hive_management",
+      "explanation": "Controlli frequenti ma non eccessivi permettono di intervenire tempestivamente.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q149",
+      "text": "Il \"nucleo\" è:",
+      "options": [
+        "Un alveare completo",
+        "Una piccola colonia con regina, covata e api usata per moltiplicare o rinforzare",
+        "Un tipo di miele",
+        "Un contenitore per sciami"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "I nuclei sono fondamentali per l'allevamento e la gestione delle colonie.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q151",
+      "text": "La \"peste americana\" è causata da:",
+      "options": [
+        "Un virus",
+        "Un fungo",
+        "Un batterio (Paenibacillus larvae)",
+        "Un acaro"
+      ],
+      "correctIndex": 2,
+      "topicKey": "diseases",
+      "explanation": "È una malattia molto grave della covata, altamente contagiosa.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q152",
+      "text": "Il Nosema ceranae colpisce principalmente:",
+      "options": [
+        "Le ali",
+        "Il sistema nervoso",
+        "L'intestino medio delle api adulte",
+        "La covata"
+      ],
+      "correctIndex": 2,
+      "topicKey": "diseases",
+      "explanation": "Provoca disentería, indebolimento e ridotta longevità.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q153",
+      "text": "Quale malattia della covata produce larve \"appiccicose\" che si filano come un filo quando si inserisce uno stecchino?",
+      "options": [
+        "Loque americana",
+        "Calcificazione (chalkbrood)",
+        "Peste europea",
+        "Varroosi"
+      ],
+      "correctIndex": 2,
+      "topicKey": "diseases",
+      "explanation": "È il classico test diagnostico per la peste europea (Melissococcus plutonius).",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q154",
+      "text": "Le ali a \"K\" (deformate) nelle api emergenti sono tipicamente segno di:",
+      "options": [
+        "Nosema",
+        "Alta carica di varroa + virus DWV",
+        "Carenza di polline",
+        "Eccesso di umidità"
+      ],
+      "correctIndex": 1,
+      "topicKey": "diseases",
+      "explanation": "Il virus delle ali deformi (DWV) viene amplificato dalla varroa.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q155",
+      "text": "La \"dissentería\" (macchie marroni all'ingresso dell'alveare) può essere causata da:",
+      "options": [
+        "Eccesso di umidita’",
+        "Nosema apis o ceranae",
+        "Entrambe le cose sopra",
+        " Solo freddo"
+      ],
+      "correctIndex": 2,
+      "topicKey": "diseases",
+      "explanation": "Sia la melata che i Nosema provocano diarrea nelle api.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q156",
+      "text": "Quale pratica aiuta a prevenire molte malattie della covata?",
+      "options": [
+        "Uso costante di antibiotici",
+        "Rinnovare regolarmente i telaini di covata",
+        "Mantenere forte la colonia e buona nutrizione",
+        "Sostituire la regina ogni anno"
+      ],
+      "correctIndex": 2,
+      "topicKey": "diseases",
+      "explanation": "Colonie forti e con buona igiene naturale resistono meglio alle malattie.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q157",
+      "text": "Il \"calcolo della caduta naturale di varroa\" si fa meglio con:",
+      "options": [
+        "Un fondo antivarroa con griglia e foglio bianco",
+        "Contando le api morte a terra",
+        "Solo osservando le api in volo",
+        "Con app sul telefono"
+      ],
+      "correctIndex": 0,
+      "topicKey": "diseases",
+      "explanation": "Si conta il numero di varroe cadute in 24-72 ore.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q158",
+      "text": "In Italia è obbligatorio registrare l'apiario presso:",
+      "options": [
+        "Solo il Comune",
+        "Il Servizio Veterinario dell'ASL e tenere aggiornato il registro apistico",
+        "La Camera di Commercio",
+        "Solo l'Associazione apicoltori"
+      ],
+      "correctIndex": 1,
+      "topicKey": "apiary_regulations",
+      "explanation": "La registrazione è obbligatoria per legge.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q159",
+      "text": "Il registro di apiario deve contenere almeno:",
+      "options": [
+        "Solo il numero di alveari",
+        "Trattamenti sanitari, movimenti di apiari e produzioni",
+        "Solo i dati del proprietario",
+        "Solo le vendite di miele"
+      ],
+      "correctIndex": 1,
+      "topicKey": "apiary_regulations",
+      "explanation": "È uno strumento fondamentale di tracciabilità e sanità.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q162",
+      "text": "È vietato somministrare alle api:",
+      "options": [
+        "Zucchero bianco",
+        "Antibiotici senza prescrizione veterinaria",
+        "Miele di produzione propria",
+        "Acqua zuccherata"
+      ],
+      "correctIndex": 1,
+      "topicKey": "apiary_regulations",
+      "explanation": "Per evitare resistenze e contaminazioni.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q163",
+      "text": "La dicitura \"Miele italiano\" sull'etichetta può essere usata solo se:",
+      "options": [
+        "Il miele è prodotto per almeno il 50% in Italia",
+        "Il miele proviene interamente dall'Italia",
+        "È millefiori",
+        "È biologico"
+      ],
+      "correctIndex": 1,
+      "topicKey": "apiary_regulations",
+      "explanation": "Deve essere 100% italiano (origine e confezionamento).",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q164",
+      "text": "Quale strumento è indispensabile per estrarre il miele dai telaini?",
+      "options": [
+        "Coltello da disopercolatura",
+        "Smielatore centrifugo o pressa",
+        "Leva apistica",
+        "Affumicatore"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Lo smielatore è l'attrezzo principale per la raccolta del miele.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q165",
+      "text": "Quando è utile dare \"sciroppo stimolante\" alle api?",
+      "options": [
+        "Sempre in estate",
+        "In primavera per stimolare la covata o in autunno per preparare l'inverno",
+        "Durante la raccolta del miele",
+        "Solo in caso di sciamatura"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Aiuta la colonia a crescere o a fare scorte prima dell'inverno.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q166",
+      "text": "Le api raccolgono acqua principalmente per:",
+      "options": [
+        "Bere",
+        "Regolare la temperatura dell'alveare e diluire il miele",
+        "Produrre cera",
+        "Nutrire le larve"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "L'acqua serve per la termoregolazione (ventilazione) e per diluire il miele.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q167",
+      "text": "Un buon \"fondo antivarroa\" con griglia serve a:",
+      "options": [
+        "Aumentare la ventilazione",
+        "Sottoporre a trattamento termico",
+        "Monitorare la caduta di varroa",
+        "Bloccare le api"
+      ],
+      "correctIndex": 2,
+      "topicKey": "hive_management",
+      "explanation": "È uno strumento molto utile per monitoraggio e igiene.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q168",
+      "text": "La \"nutrizione autunnale\" serve principalmente a:",
+      "options": [
+        "Far produrre più miele",
+        "Permettere alle api di accumulare scorte per l'inverno",
+        "Rinforzare la colonia in primavera",
+        "Stimolare la sciamatura"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "È fondamentale per superare l'inverno senza fame.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q169",
+      "text": "Perché è consigliato usare telaini con cera vergine o fondazione di cera?",
+      "options": [
+        "Per aumentare la produzione di propoli",
+        "Per ridurre il rischio di accumulo di residui nella cera vecchia",
+        "Per far deporre più uova di fuchi",
+        "Per rendere l'alveare più bello"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "La cera riciclata accumula contaminanti nel tempo.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q170",
+      "text": "Le api hanno quanti stomaci funzionali?",
+      "options": [
+        "1",
+        "2 (personale e sociale)",
+        "3",
+        "4"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Lo stomaco sociale serve a trasportare il nettare, quello personale a digerire il cibo.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q171",
+      "text": "Il \"metodo del giornale\" per unire due colonie serve a:",
+      "options": [
+        "Farle combattere",
+        "Permettere un graduale riconoscimento degli odori",
+        "Eliminare una regina",
+        "Velocizzare la fusione"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Le api rosicchiano lentamente il giornale e si abituano all’odore dell’altra colonia.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q172",
+      "text": "La peste europea colpisce soprattutto:",
+      "options": [
+        "Api adulte",
+        "La covata aperta (larve)",
+        "Solo le regine",
+        "La cera"
+      ],
+      "correctIndex": 1,
+      "topicKey": "diseases",
+      "explanation": "Le larve muoiono prima dell’operculazione e assumono una posizione a \"C\".",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q173",
+      "text": "Quale parametro fisico indica la maturità del miele durante l’estrazione?",
+      "options": [
+        "Temperatura",
+        "Contenuto di umidità (<18%)",
+        "Colore",
+        "Quantità di polline"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Un miele con umidità superiore al 18-18,5% rischia di fermentare.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q174",
+      "text": "In Italia, per esercitare l’apicoltura con più di 10 alveari è obbligatorio:",
+      "options": [
+        "Essere iscritto all’albo professionale",
+        "Avere partita IVA e seguire i corsi di formazione",
+        "Solo registrare l’apiario",
+        "No, è sempre libero"
+      ],
+      "correctIndex": 1,
+      "topicKey": "apiary_regulations",
+      "explanation": "La normativa varia per regione ma per attività economica serve partita IVA.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q175",
+      "text": "Quando si vede \"barba\" di api fuori dall’alveare in estate significa:",
+      "options": [
+        "La colonia è debole",
+        "La colonia sta sciamando",
+        "Eccesso di calore (ventilazione)",
+        "Mancanza di regina"
+      ],
+      "correctIndex": 2,
+      "topicKey": "hive_management",
+      "explanation": "Le api escono per aiutare a raffreddare l’interno dell’arnia.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q176",
+      "text": "Qual è la temperatura ideale all’interno dell’alveare per lo sviluppo della covata?",
+      "options": [
+        "30-32°C",
+        "34-35°C",
+        "37-38°C",
+        "28-30°C"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Le api mantengono la covata a circa 34,5 °C con ventilazione e clustering.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q177",
+      "text": "Le api mellifere trasportano il polline principalmente nelle:",
+      "options": [
+        "Antenne",
+        "Borsa melaria",
+        "Cestelle polliniche sulle zampe posteriori",
+        "Ghiandole ceripare"
+      ],
+      "correctIndex": 2,
+      "topicKey": "pollination",
+      "explanation": "Le cestelle (o corbicule) si trovano sulle zampe posteriori.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q178",
+      "text": "Un buon indicatore di salute della colonia è:",
+      "options": [
+        "Presenza di molte celle reali",
+        "Una covata compatta e uniforme con pochi buchi",
+        "Presenza di fuchi in autunno",
+        "Molte api morte all’ingresso"
+      ],
+      "correctIndex": 1,
+      "topicKey": "diseases",
+      "explanation": "La covata \"a chiazza\" omogenea indica una buona regina.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q180",
+      "text": "La sostituzione della regina (requeening) si fa preferibilmente:",
+      "options": [
+        "In piena estate",
+        "In autunno o inizio primavera con regina giovane",
+        "Durante la sciamatura",
+        "Solo se la colonia è orfana"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Una regina giovane in autunno garantisce una buona svernamento.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q182",
+      "text": "Le operaie producono la cera dalle ghiandole ceripare intorno ai:",
+      "options": [
+        "3-8 giorni di vita",
+        "12-18 giorni di vita",
+        "20-25 giorni di vita",
+        "Dopo 30 giorni"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Le ghiandole sono attive soprattutto nelle giovani operaie.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q183",
+      "text": "Un buon \"nucleo\" per moltiplicazione dovrebbe contenere almeno:",
+      "options": [
+        "Solo api",
+        "5 telaini di covata e api",
+        "1 telaino di covata",
+        "10 telaini"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Deve avere covata, api, scorte e preferibilmente regina o celle reali.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q184",
+      "text": "Il trattamento con acido formico è particolarmente utile perché:",
+      "options": [
+        "È efficace solo senza covata",
+        "Penetra nella covata opercolata",
+        "Non richiede protezioni",
+        "È economico ma inefficace"
+      ],
+      "correctIndex": 1,
+      "topicKey": "diseases",
+      "explanation": "È uno dei pochi trattamenti attivi anche sulle varroe dentro le celle opercolate.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q185",
+      "text": "La cristallizzazione del miele è un processo:",
+      "options": [
+        "Chimico irreversibile",
+        "Fisico reversibile (si può liquefare con bagnomaria)",
+        "Sempre un difetto",
+        "Solo del miele di acacia"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Si può sciogliere a temperatura controllata (<45°C).",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q186",
+      "text": "Perché è importante lasciare almeno 8-10 kg di scorte di miele alle api per l’inverno?",
+      "options": [
+        "Per vendere di più",
+        "Per permettere loro di superare il periodo freddo senza fame",
+        "Per stimolare la sciamatura",
+        "Non è importante"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "La fame invernale è una delle principali cause di morte delle colonie.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q187",
+      "text": "Quale colore di fiore è particolarmente attraente per le api?",
+      "options": [
+        "Rosso",
+        "Blu e giallo",
+        "Verde",
+        "Nero"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "Le api vedono bene l’ultravioletto e i colori blu/giallo.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q188",
+      "text": "Il feromone di allarme viene rilasciato principalmente dal:",
+      "options": [
+        "Addome (ghiandola di Koschevnikov)",
+        "Testa",
+        "Ali",
+        "Zampe"
+      ],
+      "correctIndex": 0,
+      "topicKey": "bees",
+      "explanation": "Quando un’ape punge, rilascia feromone che richiama altre api.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q190",
+      "text": "La \"spinta primaverile\" (spring build-up) si favorisce con:",
+      "options": [
+        "Riduzione dello spazio",
+        "Stimolazione con sciroppo 1:1 e buona disponibilità di polline",
+        "Aggiunta di melari vuoti",
+        "Trattamenti varroa intensi"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Nutrizione e spazio adeguato favoriscono lo sviluppo rapido della colonia.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q191",
+      "text": "La calcificazione (chalkbrood) si previene soprattutto con:",
+      "options": [
+        "Antibiotici",
+        "Uso di telaini con cera nuova e buona ventilazione",
+        "Vaccini",
+        "Sostituzione della regina"
+      ],
+      "correctIndex": 1,
+      "topicKey": "diseases",
+      "explanation": "Il fungo Ascosphaera apis ama umidità elevata e cera vecchia.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q192",
+      "text": "Il polline d’api congelato mantiene meglio le proprietà perché:",
+      "options": [
+        "Si indurisce",
+        "Preserva vitamine e probiotici",
+        "Diventa più dolce",
+        "Perde umidità"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "Il congelamento rapido (-18°C) è il metodo migliore di conservazione.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q194",
+      "text": "Quante zampe ha un’ape mellifera?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "Le api, come tutti gli insetti, hanno tre paia di zampe.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q195",
+      "text": "Il \"raschiamento dei fondi\" è utile soprattutto per:",
+      "options": [
+        "Raccogliere propoli",
+        "Monitorare la caduta di varroa e igiene generale",
+        "Produrre più miele",
+        "Aumentare la covata"
+      ],
+      "correctIndex": 1,
+      "topicKey": "hive_management",
+      "explanation": "Si rimuovono detriti e si controlla lo stato sanitario.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q196",
+      "text": "Le api possono percorrere fino a quanti km per trovare una buona fonte di nettare?",
+      "options": [
+        "1-2 km",
+        "3-6 km",
+        "7-8 km",
+        "Più di 10 km"
+      ],
+      "correctIndex": 1,
+      "topicKey": "pollination",
+      "explanation": "In condizioni di scarsità arrivano anche a 5-6 km.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q197",
+      "text": "La propoli ha proprietà principalmente:",
+      "options": [
+        "Dolcificanti",
+        "Antibatteriche, antivirali e antifungine",
+        "Coloranti",
+        "Nutritive come il miele"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bee_products",
+      "explanation": "È usata dalle api per sanificare l’alveare.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q199",
+      "text": "La varroa preferisce parassitare:",
+      "options": [
+        "Solo le api adulte",
+        "Soprattutto la covata di fuchi (drone brood)",
+        "Solo le operaie",
+        "La regina"
+      ],
+      "correctIndex": 1,
+      "topicKey": "diseases",
+      "explanation": "Le celle di fuco hanno periodo larvale più lungo e sono preferite dalla varroa.",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "q200",
+      "text": "Qual è il superorganismo nell’apicoltura?",
+      "options": [
+        "La singola ape",
+        "La colonia nel suo insieme",
+        "L’apiario completo",
+        "Lo sciame"
+      ],
+      "correctIndex": 1,
+      "topicKey": "bees",
+      "explanation": "La colonia è considerata un superorganismo per la divisione del lavoro e la coesione.",
       "timeLimitSeconds": 25
     }
   ]

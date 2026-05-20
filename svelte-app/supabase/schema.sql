@@ -5,7 +5,7 @@
 -- 2. In SQL Editor, paste and run this entire file
 -- 3. Project Settings → API: copy Project URL and anon public key
 -- 4. In Netlify: Site → Environment variables → add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY (same values), then redeploy
--- 5. Seed rows from `public/questions.json`: `npm run seed:supabase`
+-- 5. Import CSV → JSON, then seed: `npm run import:questions` then `npm run seed:supabase` (or `npm run refresh:questions`)
 
 create table if not exists public.questions (
   id text primary key,

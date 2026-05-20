@@ -1,9 +1,9 @@
 /**
- * One-time (or repeat) upload of public/questions.json into Supabase.
+ * Full replace of public/questions from public/questions.json.
  *
- * Requires in .env (repo root or cwd): SUPABASE_SERVICE_ROLE_KEY
- * and either VITE_SUPABASE_URL or SUPABASE_URL (project URL).
+ * Requires in svelte-app/.env: SUPABASE_SERVICE_ROLE_KEY and VITE_SUPABASE_URL (or SUPABASE_URL).
  *
+ *   npm run import:questions   # CSV → questions.json (run first when CSV changes)
  *   npm run seed:supabase
  *
  * Run SQL from supabase/schema.sql in the Supabase SQL editor before first seed.
@@ -38,12 +38,12 @@ if (!Array.isArray(topics) || !Array.isArray(questions)) {
 }
 
 const supabase = createClient(url, serviceKey, {
-  auth: { persistSession: false, autoRefreshToken: false }
+  auth: { persistSession: false, autoRefreshToken: false },
 })
 
 const topicMap = new Map(topics.map((t) => [t.key, t.label]))
 
-const questionPayload = questions.map((q, idx) => ({
+const questionPayload = questions.map((q) => ({
   id: q.id,
   topic_key: q.topicKey,
   topic_label: topicMap.get(q.topicKey) ?? q.topicKey,
@@ -54,20 +54,25 @@ const questionPayload = questions.map((q, idx) => ({
   option_4: q.options[3],
   correct_index: q.correctIndex,
   explanation: q.explanation ?? '',
-  time_limit_seconds: q.timeLimitSeconds ?? 25
+  time_limit_seconds: q.timeLimitSeconds ?? 25,
 }))
+
+const { error: delErr } = await supabase.from('questions').delete().neq('id', '')
+if (delErr) {
+  console.error('questions delete:', delErr.message)
+  process.exit(1)
+}
+console.log('Cleared existing questions.')
 
 const chunk = 200
 for (let i = 0; i < questionPayload.length; i += chunk) {
   const slice = questionPayload.slice(i, i + chunk)
-  const { error: qErr } = await supabase.from('questions').upsert(slice, {
-    onConflict: 'id'
-  })
-  if (qErr) {
-    console.error('questions upsert:', qErr.message)
+  const { error: insErr } = await supabase.from('questions').insert(slice)
+  if (insErr) {
+    console.error('questions insert:', insErr.message)
     process.exit(1)
   }
-  console.log(`Upserted questions ${i + 1}–${i + slice.length} of ${questionPayload.length}`)
+  console.log(`Inserted questions ${i + 1}–${i + slice.length} of ${questionPayload.length}`)
 }
 
 console.log('Done. Questions:', questionPayload.length)
